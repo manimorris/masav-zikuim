@@ -1,0 +1,46 @@
+*********
+@mile stone 1:
+1. read masav zikuim file -------DONE
+2. create masav zikuim file
+    - create new file by editing existing file.
+    - create new file by form.
+
+html veiws:
+    * Upload file -> send file to server  -----------DONE
+    * Reiceve res - > file into data table
+    // When creating new file from null - start here //
+    * Form with file head, body, summary and last line -> make changes
+    * after changes + adding or moving lines -> send JSON to server
+    * server creates a new file and sends back to client as file to download
+
+classes:
+    Zikuim {
+ DONE------------------------------------DONE
+       read file() {
+            raw text
+            .splited raw array
+            .designed array for client
+        }
+--DONE----------------------------------DONE
+
+        create file() {
+            designed array from client
+            .splited raw array
+            .raw text file
+            send back file download
+        }
+    }
+
+
+    endPoints:
+        *recive .txt or .001 file -> read, design -> send back JSON
+        *recive designed data -> turn into raw file -> send back file to download
+
+
+LEARN:
+    - error handling (handle + send back to client)
+    - validations || tests
+    - ascii gibrish to hebrew (masav file encoding)
+    - rec & res with JS
+    - data tables
+
