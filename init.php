@@ -1,8 +1,7 @@
 <?php
     require_once('./src/modules.php');
-    use masav\MsvZfileRead as ZmsvExtract;
+    use masav\MsvZfileRead as MsvZfileRead;
     use masav\MsvZfileWrite as MsvZfileWrite;
-    require_once('./src/funcs.php');
 
 
     
@@ -10,19 +9,36 @@
 
     // @@Recive msv file & return file data in readable array
     if( isset($_GET["readFile"]) & isset($_FILES) ) {  //add here get value!!
-                            
-        $msv = new ZmsvExtract();
-        //Validates that extention is 'txt' or '001'
-        $validateName = $msv->validateFileType(strval($_FILES["msvZfile"]["name"]));   
         
-        if ($validateName) {
-            $msv->rawFile = $_FILES["msvZfile"]["tmp_name"];
-            $res = $msv->designFileData();
-            
-            header("HTTP/1.1 200 OK");
+        
+        $msv = new MsvZfileRead();
+        //Validates that extention is 'txt' or '001'
+        $validateFile = $msv->validateFileType(strval($_FILES["msvZfile"]["name"])); 
+
+        if (!$validateFile) {
+            header("HTTP/1.1 500 File type error");
             header('Content-type: application/json');
-            echo json_encode(utf8ize($res), JSON_PRETTY_PRINT);
+            echo json_encode($msv->errorMsg, JSON_PRETTY_PRINT);
+        } else{
+             //$msv->rawFile = $_FILES["msvZfile"]["tmp_name"];
+             $res = $msv->returnFileData($_FILES["msvZfile"]["tmp_name"]);
+             //$res = $msv->designFileData();
+             
+             if ($res) {  
+                 header("HTTP/1.1 200 OK");
+                 header('Content-type: application/json');
+                 echo json_encode($res);
+ 
+             } else {
+                 header("HTTP/1.1 500 File type error");
+                 header('Content-type: application/json');
+                 echo json_encode($msv->errorMsg);
+             }
         }
+           
+                
+            
+            
     }
 
 
@@ -43,8 +59,8 @@
         // new array with all necacery data
         $msvZ = array(
                 "mosad" => array(
-                    "codeMosad" => $_POST["codeMosad"],
-                    "codeMosadSubject" => $_POST["codeMosadSubject"],
+                    "codeMosad" => substr($_POST["codeMosad"], 0, 5),
+                    "codeMosadSubject" => substr($_POST["codeMosad"], 5, 3),
                     "mosadName" => $_POST["mosadName"]
                 ),
                 "pymtDetails" => array(
@@ -62,10 +78,10 @@
         $file = $msv->mkRawfile($msvZ);
         $downloadLink = "init.php?fileDownload=" . pathinfo($file)['filename'];
         
-        //send file download back to browser  ---NOT SAFE..
-        //echo "<a href='$downloadLink' download>Download File</a>";
-        //safe??
-        echo "<a href='$downloadLink' >Download File</a>";
+        
+        // Is this a safe way do to it???
+        echo "<h1><a href='$downloadLink' >Download File</a></h1>";  
+            
  
     }
     #endregion
@@ -73,19 +89,37 @@
 
      // @@Download msv file from tmp
      if((isset($_GET["fileDownload"]))) {
-        $attachment_location = dirname(__DIR__) . '/' .'tmp/' . $_GET["fileDownload"] . ".txt";
-        if (file_exists($attachment_location)) {
 
-            header('Content-Type: application/octet-stream');
-            header("Content-Disposition: attachment; filename= $attachment_location");
-            header('Expires: 0');
-            header('Cache-Control: must-revalidate');
-            header('Pragma: public');
-            header('Content-Length: ' . filesize($attachment_location));
-            readfile($attachment_location);
-            exit;
-        }
+        $path = dirname(__DIR__) . '/' .'masavZikuim/tmp/' . $_GET["fileDownload"] . ".txt";
+        echo downloadFile($path);
     } 
        
      
+    //@ Add payee row to form API  ---NOT IN USE YET
+    if (isset($_GET["payeeRow"])) {
+        $row = file_get_contents("src/html/payeeRow.html");
+        echo $row;
+    }
+
+
+    ///// FUNCTIONS /////
+
+    function downloadFile($path) {
+        $filePath = $path;
+        $fileName = basename($filePath);
+        if (empty($filePath)) {
+            echo "'path' cannot be empty";
+            exit;
+        }
+
+        if (!file_exists($filePath)) {
+            echo "'$filePath' does not exist";
+            exit;
+        }
+
+        header("Content-disposition: attachment; filename=" . $fileName);
+        header("Content-type: " . mime_content_type($filePath));
+        readfile($filePath);
+
+    }
 ?>

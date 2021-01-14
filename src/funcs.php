@@ -1,6 +1,6 @@
 <?php
 //// FUNCTIONS ///
-    
+        //echo json_encode(utf8ize($res), JSON_PRETTY_PRINT);  ----can be delete
     function utf8ize( $mixed ) {
         if (is_array($mixed)) {
             foreach ($mixed as $key => $value) {
