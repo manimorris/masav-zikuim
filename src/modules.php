@@ -1,19 +1,54 @@
 <?php
 namespace masav;
 
+    interface ImsvfileRead {
+        public function validateFileType($file);
+        public function readRawfile();
+        public function validateFileData();
+        public function designFileData(); //returns designd data in an array.
+    }
+
+    interface ImsvfileWrite {
+        public function mkRawfile($inputData);
+    }
+
 
     class MsvZfileRead {
-        public $rawFile; 
-        public $newRawfile; 
-        
+        public $rawFile;
+        public $ExtractedData; 
+        public $errorMsg = array();
+
+
+        function returnFileData($msv_file) {
+            $this->rawFile = $msv_file;
+            
+             # First we check that the file is not empty.
+             if (empty($this->rawFile)) {
+                $this->errorMsg[] = "ERROR: no data found";
+                return;
+            }
+
+            # Read file content and extract it into an array.
+            $this->ExtractedData = $this->readRawfile($this->rawFile);
+
+            # Do some data validations to make shure the file is accually a 'msv' designed file.
+            $err = $this->validateFileData();
+            if ($err) {
+                return;
+            }
+
+            # Return The data in a Readable array.
+            $fileData = $this->designFileData();
+
+            return $fileData;
+        }
+
 
         #region //extract data from raw file and return it designed
         public function designFileData() {
-            if (empty($this->rawFile)) {
-                return "ERROR: no data found";
-            }
+
             // Get raw data and set
-            $rawData = $this->readRawfile($this->rawFile);
+            $rawData = $this->ExtractedData;
 
             // Transactions
             foreach ($rawData["tnout"] as $key => $payee) {
@@ -46,12 +81,6 @@ namespace masav;
                 "transactions" => $trans
             );
 
-           ////testing  ---MOVE OUT OF HERE ///////////////////////////////////////////////////////
-            $test = array_sum(array_column($desigendData["transactions"], 'pymtSum'));
-            if ($test - $desigendData["pymtDetails"]["transactionsSum"] != 0) {
-                return "Error: " .($test - $desigendData["pymtDetails"]["transactionsSum"]) ." is not good...";
-            }
-            ///////////////////////////////////////////////////////////////////////////////
             return $desigendData;
         }
         #endregion
@@ -158,15 +187,46 @@ namespace masav;
         
         #endregion
 
-        #region //validationsv & functions
+        #region // validations & functions
+
+        # FILE first Check
         public function validateFileType($fileName) {
             $allowedExts = array("txt", "001");
             $fileType = strtolower(pathinfo($fileName, PATHINFO_EXTENSION)); 
             if (in_array($fileType, $allowedExts)) {
                 return true;        
             } else {
-                return false;
+                $this->errorMsg[] = "The file must be a text file. the file Extention must be '.txt' or '.001'";
+                return;
             }  
+        }
+
+        
+        public function validateFileData() {
+            // $errorMsg = array();
+            // $lineErr = validateLines($file);
+            // validateOtherSpecs($file);
+            // validateTotals($file);
+            $this->errorMsg[] = "נסיון";
+            return false;
+        }
+
+        private function validateLines($file) {
+            # Last line must be all 9's duplicate 127 times.
+            # All the lines lengh must be 128 characters. because of clising file diffrences it can be between 127 - 130.
+            
+        }
+
+        private function validateOtherSpecs($file) {
+            # The first line should start will the letter 'K'.
+            # The word 'KOT' is suppose to be in the first line in position 126-128
+            # Each line of middle lines are suppose to start with the number '1'.
+            # The sumarry line (one before the end) is suppose to start with the number '5'.
+        }
+
+        private function validateTotals($file) {
+            # Check transaction (payee) lines sum = summary line @ position 22-36.
+            # Check transaction (payee) lines count = summary line @ position 52-58.
         }
         
         public function str2float($str) {
@@ -192,11 +252,13 @@ namespace masav;
             $pymtDetails["transactionsSum"] = number_format(array_sum(array_column($transatcions, "pymtSum")), 2, '.', '');
             $pymtDetails["transactionsCount"] = count($transatcions);
             
-
+            // Converting the data recived into three arrays:
+            // first line (koteret), summary line, and all the transaction in the middle lines.
             $kot = $this->koteret($mosad, $pymtDetails);
             $middleLines = $this->transactions($transatcions, $kot);
             $lastLine = $this->summaryLine($pymtDetails, $kot);
 
+            # load all data into raw text
             $fileContent = implode($kot);
             foreach( $middleLines as $line ) {
                 $fileContent .= implode($line);
@@ -204,7 +266,7 @@ namespace masav;
             $fileContent .= implode($lastLine);
             $fileContent .= str_repeat('9', 127) . "\r\n";
             
-
+            // Writing raw text to the file.
             $file = $this->mk_fileName();
             file_put_contents($file , trim($fileContent));
             return $file;
@@ -278,7 +340,7 @@ namespace masav;
 
 
 
-        /// FUNCTIONS ///
+        /// Helper FUNCTIONS ///
         private function zeroFiller($len, $input) {
             if (strlen($input) > $len) {
                 $input = substr($input, - $len);
@@ -286,13 +348,13 @@ namespace masav;
             return str_repeat('0', ($len - strlen($input))) . $input;
         }
 
+        #converting hebrew text into ascii heb encode. "csp862". 
+        #reverting the text and adding filler space.
         private function hebText($len, $input) {
-            //$input = mb_convert_encoding (strrev(trim($input)) , 'UTF-8');
             $input = trim(strrev(iconv('UTF-8', 'CSPC862LATINHEBREW', $input)));
             if (strlen($input) > $len) {
                 $input = substr($input, - $len);
             }
-            
             return $input . str_repeat(' ', $len - strlen($input));
         }
         
