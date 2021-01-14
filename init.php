@@ -10,35 +10,24 @@
     // @@Recive msv file & return file data in readable array
     if( isset($_GET["readFile"]) & isset($_FILES) ) {  //add here get value!!
         
-        
         $msv = new MsvZfileRead();
-        //Validates that extention is 'txt' or '001'
-        $validateFile = $msv->validateFileType(strval($_FILES["msvZfile"]["name"])); 
+        $res = $msv->returnFileData($_FILES["msvZfile"]);
 
-        if (!$validateFile) {
-            header("HTTP/1.1 500 File type error");
+        if ($res) {  
+            header("HTTP/1.1 200 OK");
             header('Content-type: application/json');
-            echo json_encode($msv->errorMsg, JSON_PRETTY_PRINT);
-        } else{
-             //$msv->rawFile = $_FILES["msvZfile"]["tmp_name"];
-             $res = $msv->returnFileData($_FILES["msvZfile"]["tmp_name"]);
-             //$res = $msv->designFileData();
-             
-             if ($res) {  
-                 header("HTTP/1.1 200 OK");
-                 header('Content-type: application/json');
-                 echo json_encode($res);
- 
-             } else {
-                 header("HTTP/1.1 500 File type error");
-                 header('Content-type: application/json');
-                 echo json_encode($msv->errorMsg);
-             }
+            echo json_encode($res);
+        } else {
+        $err = "<h4>שגיאה:</h4>";
+        foreach ($msv->errorMsg as $error ) {
+            $err .= "<p> $error </p>";
         }
-           
-                
-            
-            
+        header("HTTP/1.1 500 File type error");
+        header('Content-type: application/json');
+        echo $err;
+        } 
+      
+
     }
 
 

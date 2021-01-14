@@ -20,7 +20,14 @@ namespace masav;
 
 
         function returnFileData($msv_file) {
-            $this->rawFile = $msv_file;
+            # Validate the file type
+            $validateType = $this->validateFileType(strval($msv_file["name"])); 
+            if (!$validateType) {
+                return;
+            }
+
+            # set $this->rawFile to be the files path.
+            $this->rawFile = $msv_file["tmp_name"];
             
              # First we check that the file is not empty.
              if (empty($this->rawFile)) {
@@ -32,8 +39,8 @@ namespace masav;
             $this->ExtractedData = $this->readRawfile($this->rawFile);
 
             # Do some data validations to make shure the file is accually a 'msv' designed file.
-            $err = $this->validateFileData();
-            if ($err) {
+            $validatData = $this->validateFileData();
+            if (!$validatData) {
                 return;
             }
 
@@ -194,39 +201,72 @@ namespace masav;
             $allowedExts = array("txt", "001");
             $fileType = strtolower(pathinfo($fileName, PATHINFO_EXTENSION)); 
             if (in_array($fileType, $allowedExts)) {
-                return true;        
+                return "File type is OK";        
             } else {
-                $this->errorMsg[] = "The file must be a text file. the file Extention must be '.txt' or '.001'";
+                $this->errorMsg[] = "The file must be a text file with Extention '.txt' or '.001'";
                 return;
             }  
         }
 
         
         public function validateFileData() {
-            // $errorMsg = array();
-            // $lineErr = validateLines($file);
-            // validateOtherSpecs($file);
-            // validateTotals($file);
-            $this->errorMsg[] = "נסיון";
-            return false;
+            $lineErr = $this->validateLastLine();
+            $otherDataErr =  $this->validateOtherSpecs();
+            $summaryErr = $this->validateTotals();
+
+            if ($lineErr || $otherDataErr || $summaryErr ) {
+                $this->errorMsg[] = "שגיאה בקריאת קובץ. נתוני הקובץ אינם תקינים.";
+                return false;
+
+            } else {
+                return "File validate SUCCESS!";
+            }
         }
 
-        private function validateLines($file) {
+        private function validateLastLine() {
             # Last line must be all 9's duplicate 127 times.
-            # All the lines lengh must be 128 characters. because of clising file diffrences it can be between 127 - 130.
-            
+            if ( $this->ExtractedData["endLine"] != str_repeat("9", 127) ){
+                return "Last line error. last line:" .  $this->ExtractedData["endLine"];
+            }
         }
 
-        private function validateOtherSpecs($file) {
+        private function validateOtherSpecs() {
             # The first line should start will the letter 'K'.
+            $result = $this->ExtractedData["koteret"]["zihuiReshuma"] == "K" ? false : "Error1,";
+
             # The word 'KOT' is suppose to be in the first line in position 126-128
+            $result .= $this->ExtractedData["koteret"]["zihiukoteret"] == "KOT" ?  false : "Error2,";
+
             # Each line of middle lines are suppose to start with the number '1'.
+            foreach ($this->ExtractedData["tnout"]  as $trans) {
+                $result .= $trans["zihiuReshuma"] == 1 ?  false :"Error3,";
+            }
+
             # The sumarry line (one before the end) is suppose to start with the number '5'.
+            $result .= $this->ExtractedData["summary"]["zihiuReshuma"] == 5 ?  false : "Error4,";
+
+            # if $result is false then file data is valid.
+            return $result;
         }
 
-        private function validateTotals($file) {
+        private function validateTotals() {
             # Check transaction (payee) lines sum = summary line @ position 22-36.
             # Check transaction (payee) lines count = summary line @ position 52-58.
+            $result = false;
+            $summaryL = $this->ExtractedData["summary"];
+            $testSum = array_sum(array_column($this->ExtractedData["tnout"], 'pymtSum'));
+            $testCount = count($this->ExtractedData["tnout"]);
+
+            if ($testSum != $summaryL["tnoutSummary"]) {
+                $this->errorMsg[] = "error: סכום התנועות ברשומת הסיכום שונה מסכום התנועות בקובץ";
+                $result = "ERROR";                
+            } 
+            if ($testCount != $summaryL["tnuotCount"]) {
+                $this->errorMsg[] = "מספר התנועות ברשומת הסיכום שונה ממספר התנועות בקובץ";
+                $result = "ERROR";  
+            } 
+            
+            return $result;
         }
         
         public function str2float($str) {
