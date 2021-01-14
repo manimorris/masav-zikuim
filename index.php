@@ -33,15 +33,15 @@
 
                 <p>גרור את הקובץ לכאן. או..</p>
 
-                <form id="read-file" enctype="multipart/form-data" action="#" method="post" class="needs-validation"  >
+                <form id="read-file" enctype="multipart/form-data" action="#" method="post" class="was-validated"  >
                     <div class="custom-file mb-3">
                         <label class="btn btn-primary" for="msvZfile" >בחר קובץ.. </label>
                         <input name="msvZfile" type="file" id="msvZfile" class="" hidden>
+                        <div id="read-file-errors" class="text-danger"></div>
                         <p id="file-chosen">No file chosen</p>
                     </div>
                         
                    
-                    <div class="invalid-feedback">Please fill out this field.</div>
                 </form>
 
             </div>
@@ -182,7 +182,7 @@
                     dataTyp: 'json',
                     type: 'POST',
                         beforeSend: function() {
-                            $('#result').html(data);
+                            $('#read-file-errors').html('');
                         },
                         success: function ( res ) {
                             // Set form values
@@ -210,7 +210,7 @@
                         },
                         error: function (err) {
                             ///testing
-                            $('#result').html( err.responseText );
+                            $('#read-file-errors').html(err.responseText);
                         }
 
                 });                  
@@ -222,10 +222,12 @@
 
                 e.preventDefault();
 
-                if (e.dataTransfer.items.length > 1) {
-                    console.log('Load only one file at a time.');
-                } else if (!e.dataTransfer.files) {
+                 if (!e.dataTransfer.files[0]) {
                     console.log('No file was loaded.');
+                    $('#read-file-errors').html('לא זוהה קובץ. נא להעלות קובץ תקין');
+                } else if (e.dataTransfer.items.length > 1) {
+                    console.log('Load only one file at a time.');
+                    $('#read-file-errors').html('ניתן להעלאות קובץ אחד בלבד');
                 } else {
                     console.log('... file name = ' + e.dataTransfer.files[0].name );
                     msvFileupload(e.dataTransfer.files[0]);
