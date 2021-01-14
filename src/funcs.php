@@ -11,7 +11,10 @@
         }
         return $mixed;
     }
-  
+  $arr = array( "A" => array(1,1,1),
+                    "b" => array(2,2,2,2));
+
+    echo count($arr["A"]);
 
 //     $file = '../tmp/zikuim_21-01-06-17-02-56.txt';
 //     $txt = file_get_contents($file);
