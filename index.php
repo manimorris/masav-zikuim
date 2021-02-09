@@ -2,7 +2,9 @@
 <html dir="rtl">
 
     <head>
+        
         <title>הפקת קובץ תשלומים למסב</title>
+        <link rel="icon" href="css/favicon.ico">
         <meta charset="utf8">
         <META HTTP-EQUIV="Content-language" CONTENT="he">
         <meta name="viewport" content="width=device-width, initial-scale=1">
