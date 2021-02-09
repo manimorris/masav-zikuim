@@ -7,8 +7,8 @@
     
     #region routing 
 
-    // @@Recive msv file & return file data in readable array
-    if( isset($_GET["readFile"]) & isset($_FILES) ) {  //add here get value!!
+    // @@Recive msv file & return file data in readable json
+    if( isset($_GET["readFile"]) & isset($_FILES) ) {  
         
         $msv = new MsvZfileRead();
         $res = $msv->returnFileData($_FILES["msvZfile"]);
