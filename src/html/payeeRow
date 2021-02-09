@@ -29,4 +29,15 @@
     //             }
     //     });
     // }
+
 </script>
+
+<!--the php route for adding rows:
+
+
+      // //@ Add payee row to form API  ---NOT IN USE YET
+    // if (isset($_GET["payeeRow"])) {
+    //     $row = file_get_contents("src/html/payeeRow.html");
+    //     echo $row;
+    // }
+-->
