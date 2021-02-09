@@ -13,7 +13,7 @@ namespace masav;
     }
 
 
-    class MsvZfileRead {
+    class MsvZfileRead implements ImsvfileRead {
         public $rawFile;
         public $ExtractedData; 
         public $errorMsg = array();
@@ -225,7 +225,8 @@ namespace masav;
 
         private function validateLastLine() {
             # Last line must be all 9's duplicate 127 times.
-            if ( $this->ExtractedData["endLine"] != str_repeat("9", 127) ){
+            $endLine = $this->ExtractedData["endLine"];
+            if ($endLine != str_repeat("9", 127) && $endLine != str_repeat("9", 128) ){
                 return "Last line error. last line:" .  $this->ExtractedData["endLine"];
             }
         }
@@ -246,7 +247,9 @@ namespace masav;
             $result .= $this->ExtractedData["summary"]["zihiuReshuma"] == 5 ?  false : "Error4,";
 
             # if $result is false then file data is valid.
-            return $result;
+            if ($result) {
+                return $result;
+            }
         }
 
         private function validateTotals() {
