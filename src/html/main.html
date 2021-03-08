@@ -202,13 +202,13 @@
                                 trans += "<tr>";
                                 trans += `<td><input id="payeeName" name="payeeName[]" type="text" value="${payee.payeeName}" ></td>`;
                                 trans += `<td><input id="payeeID" name="payeeID[]" type="text" value="${payee.payeeID}" ></td>`;
-                                trans += `<td><input id="pymtSum" name="pymtSum[]" type="text" value="${payee.pymtSum}" ></td>`;
-                                trans += `<td><input id="payeeBank" name="payeeBank[]" type="text" value="${payee.payeeBank}" ></td>`;
-                                trans += `<td><input id="payeeBranch" name="payeeBranch[]" type="text" value="${payee.payeeBranch}" ></td>`;
-                                trans += `<td><input id="payeeAccount" name="payeeAccount[]" type="text" value="${payee.payeeAccount}" ></td>`;
-                                trans +=`<td><input id="pymtPeriodfrom" name="pymtPeriodfrom[]" type="text" value="${payee.pymtPeriodfrom}" ></td>`;
-                                trans += `<td><input id="pymtPeriodto" name="pymtPeriodto[]" type="text" value="${payee.pymtPeriodto}" ></td>`;
-                                trans += `<td><input id="pymtRefference" name="pymtRefference[]" type="text" value="${payee.pymtRefference}" ></td>`;
+                                trans += `<td><input id="pymtSum" name="pymtSum[]" type="number" step="0.01" value="${payee.pymtSum}" ></td>`;
+                                trans += `<td><input id="payeeBank" name="payeeBank[]" type="number" value="${payee.payeeBank}" ></td>`;
+                                trans += `<td><input id="payeeBranch" name="payeeBranch[]" type="number" value="${payee.payeeBranch}" ></td>`;
+                                trans += `<td><input id="payeeAccount" name="payeeAccount[]" type="number" value="${payee.payeeAccount}" ></td>`;
+                                trans +=`<td><input id="pymtPeriodfrom" name="pymtPeriodfrom[]" type="number" value="${payee.pymtPeriodfrom}" ></td>`;
+                                trans += `<td><input id="pymtPeriodto" name="pymtPeriodto[]" type="number" value="${payee.pymtPeriodto}" ></td>`;
+                                trans += `<td><input id="pymtRefference" name="pymtRefference[]" type="number" value="${payee.pymtRefference}" ></td>`;
                                 trans += "</tr>";
                             });
                 
@@ -261,7 +261,7 @@
                 trans = "<tr>";
                 trans += `<td><input id="payeeName" name="payeeName[]" type="text" ></td>`;
                 trans += `<td><input id="payeeID" name="payeeID[]" type="number" ></td>`;
-                trans += `<td><input id="pymtSum" name="pymtSum[]" type="number"  ></td>`;
+                trans += `<td><input id="pymtSum" name="pymtSum[]" type="number" step="0.01" ></td>`;
                 trans += `<td><input id="payeeBank" name="payeeBank[]" type="number" ></td>`;
                 trans += `<td><input id="payeeBranch" name="payeeBranch[]" type="number"  ></td>`;
                 trans += `<td><input id="payeeAccount" name="payeeAccount[]" type="number" ></td>`;
