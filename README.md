@@ -8,3 +8,6 @@ In this repository there includes a full solution for creating a masav Zikuim fi
 There are two options:
 1. Enter all the data in a customized form and dowloading it as a msv file.
 2. Upload an exsiting file and editing the files data and downloding the editied data in a new file.
+
+
+Mani Morris, 2020
