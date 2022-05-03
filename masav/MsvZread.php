@@ -207,7 +207,7 @@ namespace masav;
         public function validateFileData() {
             $lineErr = $this->validateLastLine();
             $otherDataErr =  $this->validateOtherSpecs();
-            $summaryErr = $this->validateTotals();
+            $summaryErr = 0;//$this->validateTotals();
 
             if ($lineErr || $otherDataErr || $summaryErr ) {
                 $this->errorMsg[] = "שגיאה בקריאת קובץ. נתוני הקובץ אינם תקינים.";

@@ -6,7 +6,7 @@
     switch ($request) {
 
         default:
-            echo require __DIR__ . '/src/html/main.html';    
+            echo require_once __DIR__ . '/src/html/main.html';    
         break;
         
         case '/readZfile':
