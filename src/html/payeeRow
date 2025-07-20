@@ -9,6 +9,7 @@
     <input id="pymtPeriodfrom" name="pymtPeriodfrom[]" type="text"  >
     <input id="pymtPeriodto" name="pymtPeriodto[]" type="text" >
     <input id="pymtRefference" name="pymtRefference[]" type="text" >
+    <button type="button" class="btn btn-danger removeRow">X</button>
         
 </fieldset>
 

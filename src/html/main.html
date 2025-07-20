@@ -121,6 +121,7 @@
                 <th>תקופת תשלום:</th>
                 <th>תקופת תשלום עד:</th>
                 <th>מספר אסמכתא</th>
+                <th>מחק</th>
               </tr>
             </thead>
             <tbody id="fieldList"></tbody>
@@ -151,6 +152,14 @@
         $('#removeLast').click(function (e) {
           e.preventDefault();
           $('#fieldList tr:last').remove();
+        });
+      });
+
+      //remove specific row
+      $(function () {
+        $('#fieldList').on('click', '.removeRow', function (e) {
+          e.preventDefault();
+          $(this).closest('tr').remove();
         });
       });
 
@@ -224,6 +233,7 @@
               trans += `<td><input id="pymtPeriodfrom" name="pymtPeriodfrom[]" type="number" value="${payee.pymtPeriodfrom}" ></td>`;
               trans += `<td><input id="pymtPeriodto" name="pymtPeriodto[]" type="number" value="${payee.pymtPeriodto}" ></td>`;
               trans += `<td><input id="pymtRefference" name="pymtRefference[]" type="number" value="${payee.pymtRefference}" ></td>`;
+              trans += `<td><button type="button" class="btn btn-danger removeRow">X</button></td>`;
               trans += '</tr>';
             });
 
@@ -282,6 +292,7 @@
         trans += `<td><input id="pymtPeriodfrom" name="pymtPeriodfrom[]" type="number"  ></td>`;
         trans += `<td><input id="pymtPeriodto" name="pymtPeriodto[]" type="number" ></td>`;
         trans += `<td><input id="pymtRefference" name="pymtRefference[]" type="number" ></td>`;
+        trans += `<td><button type="button" class="btn btn-danger removeRow">X</button></td>`;
         trans += '</tr>';
 
         $('#fieldList').append(trans);
