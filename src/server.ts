@@ -1,6 +1,7 @@
 import { MasavReader } from "./lib/masav-reader";
 import { MasavWriter } from "./lib/masav-writer";
 import type { MasavDesignedData } from "./lib/masav-types";
+import iconv from "iconv-lite";
 
 const writer = new MasavWriter();
 
@@ -41,7 +42,7 @@ async function handleRead(req: Request): Promise<Response> {
     return Response.json({ errors: ["ERROR: No file!"] }, { status: 400 });
   }
 
-  const fileContent = await file.text();
+  const fileContent = await readMasavFile(file);
   const reader = new MasavReader();
   const result = reader.returnFileData(file.name, fileContent);
 
@@ -61,19 +62,26 @@ async function handleValidate(req: Request): Promise<Response> {
   }
 
   const reader = new MasavReader();
-  const result = reader.returnFileData(file.name, await file.text());
+  const result = reader.returnFileData(file.name, await readMasavFile(file));
   return Response.json({ valid: !!result.data, errors: result.errorMsg });
 }
 
 async function handleGenerate(req: Request): Promise<Response> {
   const body = (await req.json()) as MasavDesignedData;
   const rawFile = writer.mkRawfile(body);
+  const rawFileBase64 = Buffer.from(rawFile, "binary").toString("base64");
   const fileName = `zikuim_${new Date().toISOString().replace(/[:T]/g, "-").slice(2, 19)}.txt`;
 
   return Response.json({
     fileName,
-    rawFile,
+    rawFileBase64,
   });
+}
+
+async function readMasavFile(file: File): Promise<string> {
+  const bytes = Buffer.from(await file.arrayBuffer());
+  const cp862Text = iconv.decode(bytes, "cp862");
+  return Buffer.from(cp862Text, "utf8").toString("binary");
 }
 
 console.log(`MASAV API listening on http://localhost:${server.port}`);

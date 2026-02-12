@@ -23,7 +23,8 @@ document.getElementById('submit').addEventListener('click', async (e) => {
   });
 
   const json = await response.json();
-  const blob = new Blob([json.rawFile], { type: 'text/plain;charset=cp862' });
+  const bytes = Uint8Array.from(atob(json.rawFileBase64), (char) => char.charCodeAt(0));
+  const blob = new Blob([bytes], { type: 'application/octet-stream' });
   const link = document.createElement('a');
   link.href = URL.createObjectURL(blob);
   link.download = json.fileName;
