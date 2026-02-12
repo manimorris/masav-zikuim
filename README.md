@@ -1,13 +1,29 @@
-# masav-zikuim
+# masav-zikuim (Bun + TypeScript)
 
-Masav (https://www.masav.co.il/about) is a platform for making payments to vendors, paroll payments and to pension providers.
-Masav payments are sent in a text file in a format that is descreibed in this document: https://www.masav.co.il/media/1987/mifrat_zikuim_msv.pdf.
-The coming document describes the charectar encoding for the masav file: https://www.masav.co.il/media/2001/hebrew.pdf.
+This repository now runs as a Bun.js TypeScript application with:
 
-In this repository there includes a full solution for creating a masav Zikuim file.
-There are two options:
-1. Enter all the data in a customized form and dowloading it as a msv file.
-2. Upload an exsiting file and editing the files data and downloding the editied data in a new file.
+- **API server** for MASAV files (read, validate, generate).
+- **Minimal client app** (plain HTML + JS) that mirrors the original workflow of loading a MASAV file, editing rows, and downloading a newly generated file.
 
+## Run
 
-Mani Morris, 2020
+```bash
+bun install
+bun run dev
+```
+
+Open: `http://localhost:3000`
+
+## API endpoints
+
+- `POST /api/masav/read` (multipart form-data, file field `msvZfile`)
+  - parses and validates a MASAV file
+  - returns designed JSON payload
+- `POST /api/masav/validate` (multipart form-data, file field `msvZfile`)
+  - validates a MASAV file
+  - returns `{ valid, errors }`
+- `POST /api/masav/generate` (application/json)
+  - accepts designed data payload
+  - returns `{ fileName, rawFile }`
+
+The parsing and writing logic is ported from the original `MsvZread.php` and `MsvZwrite.php` behavior including fixed-position fields and CP862 Hebrew encoding handling.
