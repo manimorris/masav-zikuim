@@ -26,4 +26,4 @@ Open: `http://localhost:3000`
   - accepts designed data payload
   - returns `{ fileName, rawFile }`
 
-The parsing and writing logic is ported from the original `MsvZread.php` and `MsvZwrite.php` behavior including fixed-position fields and CP862 Hebrew encoding handling.
+The parsing and writing logic is ported from the original PHP implementation behavior, including fixed-position fields and CP862 Hebrew encoding handling.
