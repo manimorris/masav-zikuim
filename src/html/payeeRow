@@ -1,5 +1,4 @@
 <fieldset class="form-inline" id="form-payee-row">
-    
     <input id="payeeName" name="payeeName[]" type="text" >
     <input id="payeeID" name="payeeID[]" type="text" >
     <input id="pymtSum" name="pymtSum[]" type="text"  >
@@ -10,35 +9,4 @@
     <input id="pymtPeriodto" name="pymtPeriodto[]" type="text" >
     <input id="pymtRefference" name="pymtRefference[]" type="text" >
     <button type="button" class="btn btn-danger removeRow">X</button>
-        
 </fieldset>
-
-
-
-<script>
-    // //this should be used in index.php for addind rows with this page
-    // function addPayeeRowNew() {
-    //     $.ajax({
-    //         url: 'init.php?payeeRow=1',
-    //         type: 'GET',
-    //             success: function ( res ) {
-    //                 $('#payeeRow').append(res);
-    //             },
-    //             error: function (err) {
-    //                 ///testing
-    //                 $('#result').html( err.responseText );
-    //             }
-    //     });
-    // }
-
-</script>
-
-<!--the php route for adding rows:
-
-
-      // //@ Add payee row to form API  ---NOT IN USE YET
-    // if (isset($_GET["payeeRow"])) {
-    //     $row = file_get_contents("src/html/payeeRow.html");
-    //     echo $row;
-    // }
--->
