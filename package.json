@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "bun --watch src/server.ts",
     "start": "bun src/server.ts",
+    "build:client": "mkdir -p client/build && bun build ./client/src/main.ts --outfile ./client/build/app.js --target browser --minify && cp ./client/src/index.html ./client/build/index.html && cp ./client/src/styles.css ./client/build/styles.css",
+    "build": "bun run check && bun run build:client",
     "check": "tsc --noEmit",
     "test": "bun test"
   },

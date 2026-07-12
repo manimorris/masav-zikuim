@@ -1,7 +1,14 @@
 import { MasavReader } from "./lib/masav-reader";
 import { MasavWriter } from "./lib/masav-writer";
 import { OpenformatReader } from "./lib/openformat-reader";
-import { getMosadProfile, saveMosadProfile, getAllMosadProfiles, deleteMosadProfile, type MosadProfile } from "./lib/mosad-store";
+import {
+  getMosadProfile,
+  saveMosadProfile,
+  getAllMosadProfiles,
+  deleteMosadProfile,
+  updateMosadProfile,
+  type MosadProfileInput,
+} from "./lib/mosad-store";
 import type { MasavDesignedData } from "./lib/masav-types";
 import { extname, join } from "node:path";
 
@@ -41,8 +48,13 @@ const server = Bun.serve({
       return handleSaveMosadProfile(req);
     }
 
+    if (req.method === "PUT" && url.pathname.startsWith("/api/mosad-profiles/")) {
+      const employerId = decodeURIComponent(url.pathname.replace("/api/mosad-profiles/", ""));
+      return handleUpdateMosadProfile(employerId, req);
+    }
+
     if (req.method === "DELETE" && url.pathname.startsWith("/api/mosad-profiles/")) {
-      const employerId = url.pathname.replace("/api/mosad-profiles/", "");
+      const employerId = decodeURIComponent(url.pathname.replace("/api/mosad-profiles/", ""));
       return handleDeleteMosadProfile(employerId);
     }
 
@@ -166,17 +178,45 @@ async function handleGetMosadProfiles(): Promise<Response> {
 }
 
 async function handleSaveMosadProfile(req: Request): Promise<Response> {
-  const body = (await req.json()) as MosadProfile;
-
-  if (!body.employerId || !body.codeMosad || !body.codeMosadSubject) {
-    return Response.json(
-      { error: "Missing required fields: employerId, codeMosad, codeMosadSubject" },
-      { status: 400 }
-    );
+  const body = (await req.json()) as Partial<MosadProfileInput>;
+  const validationError = validateMosadProfileInput(body);
+  if (validationError) {
+    return Response.json({ error: validationError }, { status: 400 });
   }
 
-  await saveMosadProfile(body);
+  await saveMosadProfile({
+    employerId: body.employerId!.trim(),
+    employerName: body.employerName!.trim(),
+    codeMosad: body.codeMosad!,
+    codeMosadSubject: body.codeMosadSubject!,
+  });
   return Response.json({ success: true });
+}
+
+async function handleUpdateMosadProfile(employerId: string, req: Request): Promise<Response> {
+  const body = (await req.json()) as Partial<Omit<MosadProfileInput, "employerId">>;
+  const validationError = validateMosadProfileInput({
+    employerId,
+    employerName: body.employerName,
+    codeMosad: body.codeMosad,
+    codeMosadSubject: body.codeMosadSubject,
+  });
+
+  if (validationError) {
+    return Response.json({ error: validationError }, { status: 400 });
+  }
+
+  const updated = await updateMosadProfile(employerId, {
+    employerName: body.employerName!.trim(),
+    codeMosad: body.codeMosad!,
+    codeMosadSubject: body.codeMosadSubject!,
+  });
+
+  if (updated) {
+    return Response.json({ success: true });
+  }
+
+  return Response.json({ error: "Mosad profile not found" }, { status: 404 });
 }
 
 async function handleDeleteMosadProfile(employerId: string): Promise<Response> {
@@ -185,6 +225,22 @@ async function handleDeleteMosadProfile(employerId: string): Promise<Response> {
     return Response.json({ success: true });
   }
   return Response.json({ error: "Mosad profile not found" }, { status: 404 });
+}
+
+function validateMosadProfileInput(body: Partial<MosadProfileInput>): string | null {
+  if (!body.employerId?.trim()) {
+    return "Missing required field: employerId";
+  }
+  if (!body.employerName?.trim()) {
+    return "Missing required field: employerName";
+  }
+  if (!body.codeMosad || !/^\d{5}$/.test(body.codeMosad)) {
+    return "Invalid codeMosad: must be 5 digits";
+  }
+  if (!body.codeMosadSubject || !/^\d{3}$/.test(body.codeMosadSubject)) {
+    return "Invalid codeMosadSubject: must be 3 digits";
+  }
+  return null;
 }
 
 console.log(`MASAV API listening on http://localhost:${server.port}`);

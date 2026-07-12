@@ -29,6 +29,7 @@ type MosadProfile = {
   employerName: string;
   codeMosad: string;
   codeMosadSubject: string;
+  updatedAt?: string;
 };
 
 const app = document.getElementById("app");
@@ -40,6 +41,7 @@ if (!app) {
 const routes: Record<string, () => void> = {
   "/": renderHome,
   "/create": renderCreate,
+  "/mosad-profiles": renderMosadProfiles,
 };
 
 window.addEventListener("popstate", renderRoute);
@@ -72,7 +74,11 @@ function renderShell(content: string): void {
   app.innerHTML = `
     <header class="topbar">
       <h1 class="brand">MASAV Studio</h1>
-      <a class="route-link" data-link href="/">דף הבית</a>
+      <div class="actions">
+        <a class="route-link" data-link href="/">דף הבית</a>
+        <a class="route-link" data-link href="/create">יצירת קובץ</a>
+        <a class="route-link" data-link href="/mosad-profiles">ניהול מוסדות</a>
+      </div>
     </header>
     ${content}
   `;
@@ -87,6 +93,7 @@ function renderHome(): void {
       </p>
       <div class="actions">
         <a class="route-link cta" data-link href="/create">יצירת קובץ MASAV</a>
+        <a class="route-link" data-link href="/mosad-profiles">ניהול מוסדות</a>
       </div>
     </main>
   `);
@@ -175,6 +182,54 @@ function renderCreate(): void {
   `);
 
   setupCreatePage();
+}
+
+function renderMosadProfiles(): void {
+  renderShell(`
+    <main class="panel">
+      <div id="profilesFeedback"></div>
+      <section class="panel-block">
+        <h2>ניהול מוסדות שמורים</h2>
+        <p class="muted">יצירה ידנית, עריכה ומחיקה של פרופילי מעסיק וקוד מוסד.</p>
+      </section>
+      <section class="panel-block">
+        <form id="profileForm" class="grid profile-grid">
+          <div class="field">
+            <label for="profileEmployerId">מזהה מעסיק</label>
+            <input id="profileEmployerId" maxlength="20" required />
+          </div>
+          <div class="field">
+            <label for="profileEmployerName">שם מעסיק</label>
+            <input id="profileEmployerName" required />
+          </div>
+          <div class="field">
+            <label for="profileCodeMosad">קוד מוסד מלא (8 ספרות)</label>
+            <input id="profileCodeMosad" maxlength="8" placeholder="לדוגמה: 12345678" required />
+          </div>
+          <div class="actions">
+            <button id="profileSubmit" class="primary" type="submit">שמור מוסד</button>
+            <button id="profileCancelEdit" class="secondary hidden" type="button">ביטול עריכה</button>
+          </div>
+        </form>
+      </section>
+      <section class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>מזהה מעסיק</th>
+              <th>שם מעסיק</th>
+              <th>קוד מוסד</th>
+              <th>עודכן</th>
+              <th>פעולות</th>
+            </tr>
+          </thead>
+          <tbody id="profilesRows"></tbody>
+        </table>
+      </section>
+    </main>
+  `);
+
+  setupMosadProfilesPage();
 }
 
 function setupCreatePage(): void {
@@ -444,6 +499,214 @@ function setupCreatePage(): void {
   });
 
   addRow();
+}
+
+function setupMosadProfilesPage(): void {
+  const feedback = document.getElementById("profilesFeedback") as HTMLDivElement | null;
+  const rows = document.getElementById("profilesRows") as HTMLTableSectionElement | null;
+  const form = document.getElementById("profileForm") as HTMLFormElement | null;
+  const employerIdInput = document.getElementById("profileEmployerId") as HTMLInputElement | null;
+  const employerNameInput = document.getElementById("profileEmployerName") as HTMLInputElement | null;
+  const codeMosadInput = document.getElementById("profileCodeMosad") as HTMLInputElement | null;
+  const submitButton = document.getElementById("profileSubmit") as HTMLButtonElement | null;
+  const cancelEditButton = document.getElementById("profileCancelEdit") as HTMLButtonElement | null;
+
+  if (
+    !feedback ||
+    !rows ||
+    !form ||
+    !employerIdInput ||
+    !employerNameInput ||
+    !codeMosadInput ||
+    !submitButton ||
+    !cancelEditButton
+  ) {
+    return;
+  }
+
+  let editingEmployerId: string | null = null;
+
+  const showMessage = (text: string, type: "error" | "success") => {
+    feedback.className = type;
+    feedback.textContent = text;
+  };
+
+  const clearMessage = () => {
+    feedback.className = "";
+    feedback.textContent = "";
+  };
+
+  const resetForm = () => {
+    editingEmployerId = null;
+    employerIdInput.value = "";
+    employerNameInput.value = "";
+    codeMosadInput.value = "";
+    employerIdInput.disabled = false;
+    submitButton.textContent = "שמור מוסד";
+    cancelEditButton.classList.add("hidden");
+  };
+
+  const formatDate = (value?: string): string => {
+    if (!value) {
+      return "-";
+    }
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) {
+      return value;
+    }
+    return date.toLocaleString("he-IL");
+  };
+
+  const fetchProfiles = async (): Promise<MosadProfile[]> => {
+    const response = await fetch("/api/mosad-profiles");
+    if (!response.ok) {
+      throw new Error("טעינת המוסדות נכשלה.");
+    }
+    return (await response.json()) as MosadProfile[];
+  };
+
+  const renderRows = (profiles: MosadProfile[]) => {
+    rows.innerHTML = "";
+
+    if (profiles.length === 0) {
+      const tr = document.createElement("tr");
+      const td = document.createElement("td");
+      td.colSpan = 5;
+      td.className = "empty-state";
+      td.textContent = "לא נמצאו מוסדות שמורים.";
+      tr.appendChild(td);
+      rows.appendChild(tr);
+      return;
+    }
+
+    profiles.forEach((profile) => {
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td>${escapeHtml(profile.employerId)}</td>
+        <td>${escapeHtml(profile.employerName)}</td>
+        <td>${escapeHtml(profile.codeMosad)}${escapeHtml(profile.codeMosadSubject)}</td>
+        <td>${escapeHtml(formatDate(profile.updatedAt))}</td>
+        <td class="actions">
+          <button class="secondary profile-edit" type="button">עריכה</button>
+          <button class="secondary profile-delete" type="button">מחיקה</button>
+        </td>
+      `;
+
+      const editBtn = tr.querySelector(".profile-edit") as HTMLButtonElement | null;
+      const deleteBtn = tr.querySelector(".profile-delete") as HTMLButtonElement | null;
+
+      editBtn?.addEventListener("click", () => {
+        clearMessage();
+        editingEmployerId = profile.employerId;
+        employerIdInput.value = profile.employerId;
+        employerNameInput.value = profile.employerName;
+        codeMosadInput.value = `${profile.codeMosad}${profile.codeMosadSubject}`;
+        employerIdInput.disabled = true;
+        submitButton.textContent = "עדכן מוסד";
+        cancelEditButton.classList.remove("hidden");
+      });
+
+      deleteBtn?.addEventListener("click", async () => {
+        const approved = window.confirm(`למחוק את המוסד ${profile.employerName}?`);
+        if (!approved) {
+          return;
+        }
+
+        clearMessage();
+        const response = await fetch(`/api/mosad-profiles/${encodeURIComponent(profile.employerId)}`, {
+          method: "DELETE",
+        });
+
+        if (!response.ok) {
+          showMessage("מחיקת המוסד נכשלה.", "error");
+          return;
+        }
+
+        if (editingEmployerId === profile.employerId) {
+          resetForm();
+        }
+
+        await refreshProfiles("המוסד נמחק בהצלחה.");
+      });
+
+      rows.appendChild(tr);
+    });
+  };
+
+  const refreshProfiles = async (successMessage?: string) => {
+    try {
+      const profiles = await fetchProfiles();
+      renderRows(profiles);
+      if (successMessage) {
+        showMessage(successMessage, "success");
+      }
+    } catch (error) {
+      const message = error instanceof Error ? error.message : "אירעה שגיאה בטעינת המוסדות.";
+      showMessage(message, "error");
+    }
+  };
+
+  cancelEditButton.addEventListener("click", () => {
+    clearMessage();
+    resetForm();
+  });
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    clearMessage();
+
+    const employerId = employerIdInput.value.trim();
+    const employerName = employerNameInput.value.trim();
+    const fullCode = codeMosadInput.value.trim();
+
+    if (!employerId || !employerName) {
+      showMessage("יש להזין מזהה ושם מעסיק.", "error");
+      return;
+    }
+
+    if (!/^\d{8}$/.test(fullCode)) {
+      showMessage("קוד מוסד חייב להכיל 8 ספרות.", "error");
+      return;
+    }
+
+    const payload = {
+      employerId,
+      employerName,
+      codeMosad: fullCode.slice(0, 5),
+      codeMosadSubject: fullCode.slice(5, 8),
+    };
+
+    const isEditing = editingEmployerId !== null;
+    const targetEmployerId = editingEmployerId ?? employerId;
+    const response = await fetch(
+      isEditing ? `/api/mosad-profiles/${encodeURIComponent(targetEmployerId)}` : "/api/mosad-profiles",
+      {
+        method: isEditing ? "PUT" : "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify(payload),
+      }
+    );
+
+    if (!response.ok) {
+      const json = (await response.json().catch(() => ({}))) as { error?: string };
+      showMessage(json.error ?? "שמירת המוסד נכשלה.", "error");
+      return;
+    }
+
+    resetForm();
+    await refreshProfiles(isEditing ? "המוסד עודכן בהצלחה." : "המוסד נשמר בהצלחה.");
+  });
+
+  refreshProfiles();
+}
+
+function escapeHtml(value: string): string {
+  return value
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#39;");
 }
 
 function normalizeAmountInput(value: string): string {

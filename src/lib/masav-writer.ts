@@ -57,7 +57,7 @@ export class MasavWriter {
       filler2: "0",
       payeeID: this.zeroFiller(9, pymt.payeeID),
       payeeName: encodeHebrewCp862(pymt.payeeName, 16),
-      pymtSum: this.zeroFiller(13, String(pymt.pymtSum).replace(".", "")),
+      pymtSum: this.zeroFiller(13, this.amountToCents(pymt.pymtSum)),
       payeeRefrence: this.zeroFiller(20, pymt.pymtRefference),
       pymtperiod: this.zeroFiller(8, `${pymt.pymtPeriodfrom}${pymt.pymtPeriodto}`),
       melelCode: "000",
@@ -96,5 +96,16 @@ export class MasavWriter {
   private compactDateYYMMDD(date: string): string {
     const normalized = date.replaceAll("-", "");
     return normalized.slice(-6);
+  }
+
+  private amountToCents(value: string | number): string {
+    const normalized = String(value ?? "").trim().replace(",", ".");
+    const parsed = Number.parseFloat(normalized);
+
+    if (!Number.isFinite(parsed)) {
+      return "0";
+    }
+
+    return Math.round(parsed * 100).toString();
   }
 }
