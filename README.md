@@ -1,9 +1,9 @@
 # masav-zikuim (Bun + TypeScript)
 
-This repository now runs as a Bun.js TypeScript application with:
+This repository runs as a Bun.js TypeScript application with:
 
 - **API server** for MASAV files (read, validate, generate).
-- **Minimal client app** (plain HTML + JS) that mirrors the original workflow of loading a MASAV file, editing rows, and downloading a newly generated file.
+- **SPA client** under `client/src` (home page + MASAV creation flow) compiled to `client/build`.
 
 ## Run
 
@@ -13,6 +13,12 @@ bun run dev
 ```
 
 Open: `http://localhost:3000`
+
+## Build client
+
+```bash
+bun run build:client
+```
 
 ## API endpoints
 

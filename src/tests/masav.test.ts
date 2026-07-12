@@ -37,3 +37,16 @@ test("writer creates MASAV-like file and reader can parse it", () => {
   expect(result.data?.mosad.codeMosad).toBe("12345");
   expect(result.data?.transactions[0].payeeID).toBe("123456789");
 });
+
+test("writer treats whole-number amount as shekels with .00", () => {
+  const writer = new MasavWriter();
+  const raw = writer.mkRawfile({
+    ...sample,
+    transactions: [{ ...sample.transactions[0], pymtSum: "1540" }],
+  });
+  const reader = new MasavReader();
+  const result = reader.returnFileData("sample.txt", raw);
+
+  expect(result.errorMsg.length).toBe(0);
+  expect(result.data?.transactions[0].pymtSum).toBe("1540.00");
+});

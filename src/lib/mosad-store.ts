@@ -8,6 +8,13 @@ export interface MosadProfile {
   updatedAt: string;
 }
 
+export interface MosadProfileInput {
+  employerId: string;
+  employerName: string;
+  codeMosad: string;
+  codeMosadSubject: string;
+}
+
 export interface MosadStore {
   [employerId: string]: MosadProfile;
 }
@@ -41,7 +48,7 @@ export async function getMosadProfile(employerId: string): Promise<MosadProfile 
   return store[employerId];
 }
 
-export async function saveMosadProfile(profile: MosadProfile): Promise<void> {
+export async function saveMosadProfile(profile: MosadProfileInput): Promise<void> {
   const store = await loadMosadStore();
   store[profile.employerId] = {
     ...profile,
@@ -52,7 +59,7 @@ export async function saveMosadProfile(profile: MosadProfile): Promise<void> {
 
 export async function getAllMosadProfiles(): Promise<MosadProfile[]> {
   const store = await loadMosadStore();
-  return Object.values(store);
+  return Object.values(store).sort((a, b) => b.updatedAt.localeCompare(a.updatedAt));
 }
 
 export async function deleteMosadProfile(employerId: string): Promise<boolean> {
@@ -63,4 +70,23 @@ export async function deleteMosadProfile(employerId: string): Promise<boolean> {
     return true;
   }
   return false;
+}
+
+export async function updateMosadProfile(
+  employerId: string,
+  profile: Omit<MosadProfileInput, "employerId">
+): Promise<boolean> {
+  const store = await loadMosadStore();
+  if (!store[employerId]) {
+    return false;
+  }
+
+  store[employerId] = {
+    employerId,
+    ...profile,
+    updatedAt: new Date().toISOString(),
+  };
+
+  await saveMosadStore(store);
+  return true;
 }
