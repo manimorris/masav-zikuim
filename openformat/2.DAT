@@ -1,0 +1,1197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MimshakMaasikim xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <KoteretKovetz>
+        <SUG-MIMSHAK>12</SUG-MIMSHAK>
+        <MISPAR-GIRSAT-XML>005</MISPAR-GIRSAT-XML>
+        <TAARICH-BITZUA>20260225085351</TAARICH-BITZUA>
+        <KOD-SVIVAT-AVODA>2</KOD-SVIVAT-AVODA>
+        <MISPAR-HAKOVETZ>2026022508535100000000398047110001</MISPAR-HAKOVETZ>
+        <MISPAR-SIDURI>1</MISPAR-SIDURI>
+        <NetuneiGoremSholech>
+            <KOD-SHOLECH>6</KOD-SHOLECH>
+            <SUG-MEZAHE-SHOLECH>3</SUG-MEZAHE-SHOLECH>
+            <MISPAR-ZIHUI-SHOLECH>039804711</MISPAR-ZIHUI-SHOLECH>
+            <SHEM-GOREM-SHOLECH>מנחם מוריס</SHEM-GOREM-SHOLECH>
+            <SHEM-PRATI-ISH-KESHER-SHOLECH>לילך</SHEM-PRATI-ISH-KESHER-SHOLECH>
+            <SHEM-MISHPACHA-ISH-KESHER-SHOLECH>רט</SHEM-MISHPACHA-ISH-KESHER-SHOLECH>
+            <MISPAR-TELEPHONE-KAVI-ISH-KESHER-SHOLECH>086214859</MISPAR-TELEPHONE-KAVI-ISH-KESHER-SHOLECH>
+            <E-MAIL-ISH-KESHER-SHOLECH>daat770@gmail.com</E-MAIL-ISH-KESHER-SHOLECH>
+            <MISPAR-CELLULARI-ISH-KESHER-SHOLECH>0549770936</MISPAR-CELLULARI-ISH-KESHER-SHOLECH>
+        </NetuneiGoremSholech>
+        <NetuneiGoremNimaan>
+            <KOD-NIMAAN>2</KOD-NIMAAN>
+            <SUG-MEZAHE-NIMAAN>1</SUG-MEZAHE-NIMAAN>
+            <MISPAR-ZIHUI-NIMAAN>514813450</MISPAR-ZIHUI-NIMAAN>
+            <MISPAR-ZIHUI-ETZEL-YATZRAN-NIMAAN xsi:nil="true"></MISPAR-ZIHUI-ETZEL-YATZRAN-NIMAAN>
+        </NetuneiGoremNimaan>
+    </KoteretKovetz>
+    <GufHamimshak>
+        <YeshutGoremPoneLemislaka>
+            <SUG-PONE>5</SUG-PONE>
+            <SUG-KOD-MEZAHE-PONE>1</SUG-KOD-MEZAHE-PONE>
+            <MISPAR-MEZAHE-PONE>580196921</MISPAR-MEZAHE-PONE>
+            <SHEM-GOREM-PONE>דעת לימודי יהדות</SHEM-GOREM-PONE>
+            <MISPAR-MEZAHE-METAFEL xsi:nil="true"></MISPAR-MEZAHE-METAFEL>
+            <SHEM-PRATI-PONE-LEMISLAKA>לילך</SHEM-PRATI-PONE-LEMISLAKA>
+            <SHEM-MISHPACHA-PONE-LEMISLAKA>רט</SHEM-MISHPACHA-PONE-LEMISLAKA>
+            <MISPAR-TELEPHONE-KAVI-PONE-LEMISLAKA>086214859</MISPAR-TELEPHONE-KAVI-PONE-LEMISLAKA>
+            <E-MAIL-PONE-LEMISLAKA>daat770@gmail.com</E-MAIL-PONE-LEMISLAKA>
+            <MISPAR-CELLULARI>0549770936</MISPAR-CELLULARI>
+            <PirteiHaavaratKsafim>
+                <KOD-MEZAHE-KUPA-H-P>512065202000000000001630000000</KOD-MEZAHE-KUPA-H-P>
+                <SUG-MAFKID>1</SUG-MAFKID>
+                <SUG-MEZAHE-MAASIK>1</SUG-MEZAHE-MAASIK>
+                <MISPAR-ZIHUY-MAASIK>580196921</MISPAR-ZIHUY-MAASIK>
+                <MISPAR-TIK-NIKUIM-MAASIK>926205535</MISPAR-TIK-NIKUIM-MAASIK>
+                <KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>27081</KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>
+                <KOD-MASAV>67289306</KOD-MASAV>
+                <SCHUM-HAFKADA-KOLEL>7463.00</SCHUM-HAFKADA-KOLEL>
+                <SHEM-MAASIK>דעת לימודי יהדות</SHEM-MAASIK>
+                <SHEM-PRATI-ISH-KESHER-MAASIK>לילך</SHEM-PRATI-ISH-KESHER-MAASIK>
+                <SHEM-MISHPACHA-ISH-KESHER-MAASIK>רט</SHEM-MISHPACHA-ISH-KESHER-MAASIK>
+                <MISPAR-TELEPHONE-KAVI-ISH-KESHER-MAASIK>086214859</MISPAR-TELEPHONE-KAVI-ISH-KESHER-MAASIK>
+                <E-MAIL-ISH-KESHER-MAASIK>daat770@gmail.com</E-MAIL-ISH-KESHER-MAASIK>
+                <MISPAR-CELLULARI-ISH-KESHER-MAASIK>0549770936</MISPAR-CELLULARI-ISH-KESHER-MAASIK>
+                <SUG-PEULA>1</SUG-PEULA>
+                <KOD-EMTZAI-TASHLUM>7</KOD-EMTZAI-TASHLUM>
+                <SACH-HAFKADA-KUPA-H-P>7463.00</SACH-HAFKADA-KUPA-H-P>
+                <TAARICH-ERECH-HAFKADA-LEKUPA>2026-01-31</TAARICH-ERECH-HAFKADA-LEKUPA>
+                <TAARICH-ERECH-HAFKADA-CHESHBON-NEHEMANUT xsi:nil="true"></TAARICH-ERECH-HAFKADA-CHESHBON-NEHEMANUT>
+                <MISPAR-ASMACHTA-LEAHAVARAT-KSAFIM>58019692102601</MISPAR-ASMACHTA-LEAHAVARAT-KSAFIM>
+                <MISPAR-ZIHUI>C3489162-47F3-453F-AD3F-AD7DC227E783</MISPAR-ZIHUI>
+                <MISPAR-BANK-MAASIK>52</MISPAR-BANK-MAASIK>
+                <MISPAR-SNIF-MAASIK>174</MISPAR-SNIF-MAASIK>
+                <MISPAR-CHESHBON-MAASIK>555770</MISPAR-CHESHBON-MAASIK>
+                <SUG-CHESHBON xsi:nil="true"></SUG-CHESHBON>
+                <SUG-KARTIS-MAASIK xsi:nil="true"></SUG-KARTIS-MAASIK>
+                <SUG-CHESHBON-MAASIK>1</SUG-CHESHBON-MAASIK>
+                <SUG-CHESHBON-KOLET-TASHLUM>1</SUG-CHESHBON-KOLET-TASHLUM>
+                <MISPAR-BANK-KOLET>20</MISPAR-BANK-KOLET>
+                <MISPAR-SNIF-KOLET>461</MISPAR-SNIF-KOLET>
+                <MISPAR-CHESHBON-KOLET>193447</MISPAR-CHESHBON-KOLET>
+                <MISPAR-ZIHUI-KODEM xsi:nil="true"></MISPAR-ZIHUI-KODEM>
+                <MISPAR-MISLAKA xsi:nil="true"></MISPAR-MISLAKA>
+                <MISPAR-MISLAKA-KODEM xsi:nil="true"></MISPAR-MISLAKA-KODEM>
+                <PirteiKupa>
+                    <SUG-KUPA>2</SUG-KUPA>
+                    <SUG-KEREN-PENSIA xsi:nil="true"></SUG-KEREN-PENSIA>
+                    <SHEM-KUPA-ETZEL-MAASIK>מיטב דש</SHEM-KUPA-ETZEL-MAASIK>
+                    <MISPAR-KUPA-ETZEL-MAASIK>7</MISPAR-KUPA-ETZEL-MAASIK>
+                    <PirteiOved>
+                        <SUG-MEZAHE-OVED>1</SUG-MEZAHE-OVED>
+                        <MISPAR-MEZAHE>21474333</MISPAR-MEZAHE>
+                        <SHEM-PRATI>עידית</SHEM-PRATI>
+                        <SHEM-MISHPACHA>ביטון</SHEM-MISHPACHA>
+                        <TAARICH-LEIDA>1979-12-28</TAARICH-LEIDA>
+                        <MISPAR-OVED-ETZEL-MAASIK>83</MISPAR-OVED-ETZEL-MAASIK>
+                        <KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>27081</KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>
+                        <SHEM-YISHUV>רחובות</SHEM-YISHUV>
+                        <SHEM-RECHOV>עזרא</SHEM-RECHOV>
+                        <MISPAR-BAIT>6</MISPAR-BAIT>
+                        <MISPAR-DIRA xsi:nil="true"></MISPAR-DIRA>
+                        <MIKUD xsi:nil="true"></MIKUD>
+                        <TA-DOAR xsi:nil="true"></TA-DOAR>
+                        <E-MAIL>iditb79@gmail.com</E-MAIL>
+                        <MISPAR-CELLULARI>0526049655</MISPAR-CELLULARI>
+                        <MIN>2</MIN>
+                        <MOED-TCHILAT-AHASAKAT-OVED>2020-01-01</MOED-TCHILAT-AHASAKAT-OVED>
+                        <HASHAVA-KIBUTZI xsi:nil="true"></HASHAVA-KIBUTZI>
+                        <HATZHARAT-OVED xsi:nil="true"></HATZHARAT-OVED>
+                        <SEIF-ARBA-ESRE-LAOVED>3</SEIF-ARBA-ESRE-LAOVED>
+                        <SEIF-ARBA-ESRE-TAHRIH-KNISA-LETOKEF xsi:nil="true"></SEIF-ARBA-ESRE-TAHRIH-KNISA-LETOKEF>
+                        <ChodeshMaskoretVestatusOved>
+                            <CHODESH-MASKORET>2026-01-01</CHODESH-MASKORET>
+                            <MAHAMAD-HAFKADA-BEKUPA>1</MAHAMAD-HAFKADA-BEKUPA>
+                            <SUG-TAKBUL>1</SUG-TAKBUL>
+                            <ROVED-SACHAR>1</ROVED-SACHAR>
+                            <SIBAT-BAKASH-LECHZER-KSAFIM xsi:nil="true"></SIBAT-BAKASH-LECHZER-KSAFIM>
+                            <SACHAR-MEDUVACH>3978.00</SACHAR-MEDUVACH>
+                            <STATUS-OVED-BECHODESH-MASKORET>2</STATUS-OVED-BECHODESH-MASKORET>
+                            <TAARICH-TCHILAT-STATUS>2020-01-01</TAARICH-TCHILAT-STATUS>
+                            <CHELKIUT-MISRA>100.00</CHELKIUT-MISRA>
+                            <YEMEI-AVODA-BECHODESH xsi:nil="true"></YEMEI-AVODA-BECHODESH>
+                            <MISPAR-POLISA-O-HESHBON xsi:nil="true"></MISPAR-POLISA-O-HESHBON>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>1</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.00</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>239.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>374473E9-8CB4-44CF-9E5B-A09F1FFAF6FB</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>2</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.00</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>239.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>B2DA22A8-35AA-420A-B21B-6BF7FA8CD552</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>3</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.50</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>259.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>FD1A6504-944C-4AB1-A37C-0909D06E1357</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <SachHafrashaLeKupaBechodeshMaskoretOved>
+                                <SACH-HAFRASHA-BECHODESH-MASKORET xsi:nil="true"></SACH-HAFRASHA-BECHODESH-MASKORET>
+                            </SachHafrashaLeKupaBechodeshMaskoretOved>
+                        </ChodeshMaskoretVestatusOved>
+                        <SachHafrashaLeOvedBekupa>
+                            <SACH-HAFRASHA-LEOVED-BEKUPA xsi:nil="true"></SACH-HAFRASHA-LEOVED-BEKUPA>
+                        </SachHafrashaLeOvedBekupa>
+                    </PirteiOved>
+                    <PirteiOved>
+                        <SUG-MEZAHE-OVED>1</SUG-MEZAHE-OVED>
+                        <MISPAR-MEZAHE>32941874</MISPAR-MEZAHE>
+                        <SHEM-PRATI>ליפז</SHEM-PRATI>
+                        <SHEM-MISHPACHA>פרידמן</SHEM-MISHPACHA>
+                        <TAARICH-LEIDA>1978-04-22</TAARICH-LEIDA>
+                        <MISPAR-OVED-ETZEL-MAASIK>81</MISPAR-OVED-ETZEL-MAASIK>
+                        <KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>27081</KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>
+                        <SHEM-YISHUV>רחובות</SHEM-YISHUV>
+                        <SHEM-RECHOV>האגוז</SHEM-RECHOV>
+                        <MISPAR-BAIT>22/10</MISPAR-BAIT>
+                        <MISPAR-DIRA xsi:nil="true"></MISPAR-DIRA>
+                        <MIKUD xsi:nil="true"></MIKUD>
+                        <TA-DOAR xsi:nil="true"></TA-DOAR>
+                        <E-MAIL>lipazmaman@gmail.com</E-MAIL>
+                        <MISPAR-CELLULARI>0522397080</MISPAR-CELLULARI>
+                        <MIN>2</MIN>
+                        <MOED-TCHILAT-AHASAKAT-OVED>2019-09-03</MOED-TCHILAT-AHASAKAT-OVED>
+                        <HASHAVA-KIBUTZI xsi:nil="true"></HASHAVA-KIBUTZI>
+                        <HATZHARAT-OVED xsi:nil="true"></HATZHARAT-OVED>
+                        <SEIF-ARBA-ESRE-LAOVED>3</SEIF-ARBA-ESRE-LAOVED>
+                        <SEIF-ARBA-ESRE-TAHRIH-KNISA-LETOKEF xsi:nil="true"></SEIF-ARBA-ESRE-TAHRIH-KNISA-LETOKEF>
+                        <ChodeshMaskoretVestatusOved>
+                            <CHODESH-MASKORET>2026-01-01</CHODESH-MASKORET>
+                            <MAHAMAD-HAFKADA-BEKUPA>1</MAHAMAD-HAFKADA-BEKUPA>
+                            <SUG-TAKBUL>1</SUG-TAKBUL>
+                            <ROVED-SACHAR>1</ROVED-SACHAR>
+                            <SIBAT-BAKASH-LECHZER-KSAFIM xsi:nil="true"></SIBAT-BAKASH-LECHZER-KSAFIM>
+                            <SACHAR-MEDUVACH>2074.00</SACHAR-MEDUVACH>
+                            <STATUS-OVED-BECHODESH-MASKORET>2</STATUS-OVED-BECHODESH-MASKORET>
+                            <TAARICH-TCHILAT-STATUS>2019-09-03</TAARICH-TCHILAT-STATUS>
+                            <CHELKIUT-MISRA>100.00</CHELKIUT-MISRA>
+                            <YEMEI-AVODA-BECHODESH xsi:nil="true"></YEMEI-AVODA-BECHODESH>
+                            <MISPAR-POLISA-O-HESHBON xsi:nil="true"></MISPAR-POLISA-O-HESHBON>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>1</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.00</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>124.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>0D56B44A-10FA-45BB-8223-A5EEA17DFB28</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>2</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.00</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>124.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>93083858-90E1-4D30-A69E-163AFA4BBC17</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>3</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.50</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>135.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>DBDD25F8-2EDA-4221-A1F6-A20E7CDBE5B6</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <SachHafrashaLeKupaBechodeshMaskoretOved>
+                                <SACH-HAFRASHA-BECHODESH-MASKORET xsi:nil="true"></SACH-HAFRASHA-BECHODESH-MASKORET>
+                            </SachHafrashaLeKupaBechodeshMaskoretOved>
+                        </ChodeshMaskoretVestatusOved>
+                        <SachHafrashaLeOvedBekupa>
+                            <SACH-HAFRASHA-LEOVED-BEKUPA xsi:nil="true"></SACH-HAFRASHA-LEOVED-BEKUPA>
+                        </SachHafrashaLeOvedBekupa>
+                    </PirteiOved>
+                    <PirteiOved>
+                        <SUG-MEZAHE-OVED>1</SUG-MEZAHE-OVED>
+                        <MISPAR-MEZAHE>33022807</MISPAR-MEZAHE>
+                        <SHEM-PRATI>קרן</SHEM-PRATI>
+                        <SHEM-MISHPACHA>אופיר</SHEM-MISHPACHA>
+                        <TAARICH-LEIDA>1976-08-02</TAARICH-LEIDA>
+                        <MISPAR-OVED-ETZEL-MAASIK>50</MISPAR-OVED-ETZEL-MAASIK>
+                        <KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>27081</KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>
+                        <SHEM-YISHUV>רחובות</SHEM-YISHUV>
+                        <SHEM-RECHOV>משה גור</SHEM-RECHOV>
+                        <MISPAR-BAIT>11</MISPAR-BAIT>
+                        <MISPAR-DIRA xsi:nil="true"></MISPAR-DIRA>
+                        <MIKUD xsi:nil="true"></MIKUD>
+                        <TA-DOAR xsi:nil="true"></TA-DOAR>
+                        <E-MAIL>keren@daat.org.il</E-MAIL>
+                        <MISPAR-CELLULARI>0528433770</MISPAR-CELLULARI>
+                        <MIN>2</MIN>
+                        <MOED-TCHILAT-AHASAKAT-OVED>2015-10-01</MOED-TCHILAT-AHASAKAT-OVED>
+                        <HASHAVA-KIBUTZI xsi:nil="true"></HASHAVA-KIBUTZI>
+                        <HATZHARAT-OVED xsi:nil="true"></HATZHARAT-OVED>
+                        <SEIF-ARBA-ESRE-LAOVED>3</SEIF-ARBA-ESRE-LAOVED>
+                        <SEIF-ARBA-ESRE-TAHRIH-KNISA-LETOKEF xsi:nil="true"></SEIF-ARBA-ESRE-TAHRIH-KNISA-LETOKEF>
+                        <ChodeshMaskoretVestatusOved>
+                            <CHODESH-MASKORET>2026-01-01</CHODESH-MASKORET>
+                            <MAHAMAD-HAFKADA-BEKUPA>1</MAHAMAD-HAFKADA-BEKUPA>
+                            <SUG-TAKBUL>1</SUG-TAKBUL>
+                            <ROVED-SACHAR>1</ROVED-SACHAR>
+                            <SIBAT-BAKASH-LECHZER-KSAFIM xsi:nil="true"></SIBAT-BAKASH-LECHZER-KSAFIM>
+                            <SACHAR-MEDUVACH>2100.00</SACHAR-MEDUVACH>
+                            <STATUS-OVED-BECHODESH-MASKORET>2</STATUS-OVED-BECHODESH-MASKORET>
+                            <TAARICH-TCHILAT-STATUS>2015-10-01</TAARICH-TCHILAT-STATUS>
+                            <CHELKIUT-MISRA>100.00</CHELKIUT-MISRA>
+                            <YEMEI-AVODA-BECHODESH xsi:nil="true"></YEMEI-AVODA-BECHODESH>
+                            <MISPAR-POLISA-O-HESHBON xsi:nil="true"></MISPAR-POLISA-O-HESHBON>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>1</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.00</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>126.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>93EFFC72-49B9-4578-B062-7DEBF2D5B620</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>2</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.00</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>126.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>54F1187E-5513-4B76-9163-9652D609DCF7</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>3</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.50</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>137.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>AB1D1519-FEFB-4AA1-AE78-428E834D5B5D</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <SachHafrashaLeKupaBechodeshMaskoretOved>
+                                <SACH-HAFRASHA-BECHODESH-MASKORET xsi:nil="true"></SACH-HAFRASHA-BECHODESH-MASKORET>
+                            </SachHafrashaLeKupaBechodeshMaskoretOved>
+                        </ChodeshMaskoretVestatusOved>
+                        <SachHafrashaLeOvedBekupa>
+                            <SACH-HAFRASHA-LEOVED-BEKUPA xsi:nil="true"></SACH-HAFRASHA-LEOVED-BEKUPA>
+                        </SachHafrashaLeOvedBekupa>
+                    </PirteiOved>
+                    <PirteiOved>
+                        <SUG-MEZAHE-OVED>1</SUG-MEZAHE-OVED>
+                        <MISPAR-MEZAHE>34199026</MISPAR-MEZAHE>
+                        <SHEM-PRATI>לילך</SHEM-PRATI>
+                        <SHEM-MISHPACHA>רט</SHEM-MISHPACHA>
+                        <TAARICH-LEIDA>1977-11-13</TAARICH-LEIDA>
+                        <MISPAR-OVED-ETZEL-MAASIK>69</MISPAR-OVED-ETZEL-MAASIK>
+                        <KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>27081</KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>
+                        <SHEM-YISHUV>רחובות</SHEM-YISHUV>
+                        <SHEM-RECHOV>בנימין</SHEM-RECHOV>
+                        <MISPAR-BAIT>40</MISPAR-BAIT>
+                        <MISPAR-DIRA xsi:nil="true"></MISPAR-DIRA>
+                        <MIKUD xsi:nil="true"></MIKUD>
+                        <TA-DOAR xsi:nil="true"></TA-DOAR>
+                        <E-MAIL>lilach@daat.org.il</E-MAIL>
+                        <MISPAR-CELLULARI>0524269303</MISPAR-CELLULARI>
+                        <MIN>2</MIN>
+                        <MOED-TCHILAT-AHASAKAT-OVED>2017-11-01</MOED-TCHILAT-AHASAKAT-OVED>
+                        <HASHAVA-KIBUTZI xsi:nil="true"></HASHAVA-KIBUTZI>
+                        <HATZHARAT-OVED xsi:nil="true"></HATZHARAT-OVED>
+                        <SEIF-ARBA-ESRE-LAOVED>3</SEIF-ARBA-ESRE-LAOVED>
+                        <SEIF-ARBA-ESRE-TAHRIH-KNISA-LETOKEF xsi:nil="true"></SEIF-ARBA-ESRE-TAHRIH-KNISA-LETOKEF>
+                        <ChodeshMaskoretVestatusOved>
+                            <CHODESH-MASKORET>2026-01-01</CHODESH-MASKORET>
+                            <MAHAMAD-HAFKADA-BEKUPA>1</MAHAMAD-HAFKADA-BEKUPA>
+                            <SUG-TAKBUL>1</SUG-TAKBUL>
+                            <ROVED-SACHAR>1</ROVED-SACHAR>
+                            <SIBAT-BAKASH-LECHZER-KSAFIM xsi:nil="true"></SIBAT-BAKASH-LECHZER-KSAFIM>
+                            <SACHAR-MEDUVACH>1004.00</SACHAR-MEDUVACH>
+                            <STATUS-OVED-BECHODESH-MASKORET>2</STATUS-OVED-BECHODESH-MASKORET>
+                            <TAARICH-TCHILAT-STATUS>2017-11-01</TAARICH-TCHILAT-STATUS>
+                            <CHELKIUT-MISRA>100.00</CHELKIUT-MISRA>
+                            <YEMEI-AVODA-BECHODESH xsi:nil="true"></YEMEI-AVODA-BECHODESH>
+                            <MISPAR-POLISA-O-HESHBON xsi:nil="true"></MISPAR-POLISA-O-HESHBON>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>1</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.00</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>60.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>724189F0-81D3-4542-A05F-83D5D8339E6F</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>2</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.00</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>60.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>0E2F2E8A-563A-44F4-ABA9-EDA84D552DEE</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>3</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.50</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>65.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>D63ADA7B-8CE8-4E1B-ADCB-28C319AAD138</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <SachHafrashaLeKupaBechodeshMaskoretOved>
+                                <SACH-HAFRASHA-BECHODESH-MASKORET xsi:nil="true"></SACH-HAFRASHA-BECHODESH-MASKORET>
+                            </SachHafrashaLeKupaBechodeshMaskoretOved>
+                        </ChodeshMaskoretVestatusOved>
+                        <SachHafrashaLeOvedBekupa>
+                            <SACH-HAFRASHA-LEOVED-BEKUPA xsi:nil="true"></SACH-HAFRASHA-LEOVED-BEKUPA>
+                        </SachHafrashaLeOvedBekupa>
+                    </PirteiOved>
+                    <PirteiOved>
+                        <SUG-MEZAHE-OVED>1</SUG-MEZAHE-OVED>
+                        <MISPAR-MEZAHE>39720198</MISPAR-MEZAHE>
+                        <SHEM-PRATI>רינת חדוה</SHEM-PRATI>
+                        <SHEM-MISHPACHA>שאער</SHEM-MISHPACHA>
+                        <TAARICH-LEIDA>1984-08-11</TAARICH-LEIDA>
+                        <MISPAR-OVED-ETZEL-MAASIK>111</MISPAR-OVED-ETZEL-MAASIK>
+                        <KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>27081</KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>
+                        <SHEM-YISHUV>לוד</SHEM-YISHUV>
+                        <SHEM-RECHOV>בעל התניא</SHEM-RECHOV>
+                        <MISPAR-BAIT>11/21</MISPAR-BAIT>
+                        <MISPAR-DIRA xsi:nil="true"></MISPAR-DIRA>
+                        <MIKUD>7132516</MIKUD>
+                        <TA-DOAR xsi:nil="true"></TA-DOAR>
+                        <E-MAIL>yoach11@gmail.com</E-MAIL>
+                        <MISPAR-CELLULARI>0546761309</MISPAR-CELLULARI>
+                        <MIN>2</MIN>
+                        <MOED-TCHILAT-AHASAKAT-OVED>2023-10-01</MOED-TCHILAT-AHASAKAT-OVED>
+                        <HASHAVA-KIBUTZI xsi:nil="true"></HASHAVA-KIBUTZI>
+                        <HATZHARAT-OVED xsi:nil="true"></HATZHARAT-OVED>
+                        <SEIF-ARBA-ESRE-LAOVED>1</SEIF-ARBA-ESRE-LAOVED>
+                        <SEIF-ARBA-ESRE-TAHRIH-KNISA-LETOKEF xsi:nil="true"></SEIF-ARBA-ESRE-TAHRIH-KNISA-LETOKEF>
+                        <ChodeshMaskoretVestatusOved>
+                            <CHODESH-MASKORET>2026-01-01</CHODESH-MASKORET>
+                            <MAHAMAD-HAFKADA-BEKUPA>1</MAHAMAD-HAFKADA-BEKUPA>
+                            <SUG-TAKBUL>1</SUG-TAKBUL>
+                            <ROVED-SACHAR>1</ROVED-SACHAR>
+                            <SIBAT-BAKASH-LECHZER-KSAFIM xsi:nil="true"></SIBAT-BAKASH-LECHZER-KSAFIM>
+                            <SACHAR-MEDUVACH>7000.00</SACHAR-MEDUVACH>
+                            <STATUS-OVED-BECHODESH-MASKORET>1</STATUS-OVED-BECHODESH-MASKORET>
+                            <TAARICH-TCHILAT-STATUS>2023-10-01</TAARICH-TCHILAT-STATUS>
+                            <CHELKIUT-MISRA>100.00</CHELKIUT-MISRA>
+                            <YEMEI-AVODA-BECHODESH>0</YEMEI-AVODA-BECHODESH>
+                            <MISPAR-POLISA-O-HESHBON xsi:nil="true"></MISPAR-POLISA-O-HESHBON>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>1</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.00</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>420.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>5317E0E3-8D53-4B41-8534-DA54165A85F5</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>2</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.00</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>420.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>294BD546-A2DA-4072-828B-30448D336076</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>3</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.50</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>455.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>8BEE12BD-0172-45F2-9927-DE4B921BC9D8</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <SachHafrashaLeKupaBechodeshMaskoretOved>
+                                <SACH-HAFRASHA-BECHODESH-MASKORET xsi:nil="true"></SACH-HAFRASHA-BECHODESH-MASKORET>
+                            </SachHafrashaLeKupaBechodeshMaskoretOved>
+                        </ChodeshMaskoretVestatusOved>
+                        <SachHafrashaLeOvedBekupa>
+                            <SACH-HAFRASHA-LEOVED-BEKUPA xsi:nil="true"></SACH-HAFRASHA-LEOVED-BEKUPA>
+                        </SachHafrashaLeOvedBekupa>
+                    </PirteiOved>
+                    <PirteiOved>
+                        <SUG-MEZAHE-OVED>1</SUG-MEZAHE-OVED>
+                        <MISPAR-MEZAHE>53066650</MISPAR-MEZAHE>
+                        <SHEM-PRATI>חדוה</SHEM-PRATI>
+                        <SHEM-MISHPACHA>קנרוטו</SHEM-MISHPACHA>
+                        <TAARICH-LEIDA>1981-12-24</TAARICH-LEIDA>
+                        <MISPAR-OVED-ETZEL-MAASIK>101</MISPAR-OVED-ETZEL-MAASIK>
+                        <KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>27081</KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>
+                        <SHEM-YISHUV>מודיעין עילית</SHEM-YISHUV>
+                        <SHEM-RECHOV>יונה הנביא</SHEM-RECHOV>
+                        <MISPAR-BAIT>7</MISPAR-BAIT>
+                        <MISPAR-DIRA xsi:nil="true"></MISPAR-DIRA>
+                        <MIKUD>7178523</MIKUD>
+                        <TA-DOAR xsi:nil="true"></TA-DOAR>
+                        <E-MAIL>Chedva1981@gmail.com</E-MAIL>
+                        <MISPAR-CELLULARI>0544468208</MISPAR-CELLULARI>
+                        <MIN>2</MIN>
+                        <MOED-TCHILAT-AHASAKAT-OVED>2022-03-01</MOED-TCHILAT-AHASAKAT-OVED>
+                        <HASHAVA-KIBUTZI xsi:nil="true"></HASHAVA-KIBUTZI>
+                        <HATZHARAT-OVED xsi:nil="true"></HATZHARAT-OVED>
+                        <SEIF-ARBA-ESRE-LAOVED>1</SEIF-ARBA-ESRE-LAOVED>
+                        <SEIF-ARBA-ESRE-TAHRIH-KNISA-LETOKEF xsi:nil="true"></SEIF-ARBA-ESRE-TAHRIH-KNISA-LETOKEF>
+                        <ChodeshMaskoretVestatusOved>
+                            <CHODESH-MASKORET>2026-01-01</CHODESH-MASKORET>
+                            <MAHAMAD-HAFKADA-BEKUPA>1</MAHAMAD-HAFKADA-BEKUPA>
+                            <SUG-TAKBUL>1</SUG-TAKBUL>
+                            <ROVED-SACHAR>1</ROVED-SACHAR>
+                            <SIBAT-BAKASH-LECHZER-KSAFIM xsi:nil="true"></SIBAT-BAKASH-LECHZER-KSAFIM>
+                            <SACHAR-MEDUVACH>4218.00</SACHAR-MEDUVACH>
+                            <STATUS-OVED-BECHODESH-MASKORET>1</STATUS-OVED-BECHODESH-MASKORET>
+                            <TAARICH-TCHILAT-STATUS>2022-03-01</TAARICH-TCHILAT-STATUS>
+                            <CHELKIUT-MISRA>100.00</CHELKIUT-MISRA>
+                            <YEMEI-AVODA-BECHODESH xsi:nil="true"></YEMEI-AVODA-BECHODESH>
+                            <MISPAR-POLISA-O-HESHBON xsi:nil="true"></MISPAR-POLISA-O-HESHBON>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>1</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.00</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>253.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>AFD54FB0-0394-4F25-8AB5-DE25CFC2E57D</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>2</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.00</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>253.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>33400476-E8D3-4A23-BC4B-4FD036252FB3</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>3</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.50</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>274.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>93AF8BFC-EBCB-4B6E-8F70-CEAF2ADECD2B</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <SachHafrashaLeKupaBechodeshMaskoretOved>
+                                <SACH-HAFRASHA-BECHODESH-MASKORET xsi:nil="true"></SACH-HAFRASHA-BECHODESH-MASKORET>
+                            </SachHafrashaLeKupaBechodeshMaskoretOved>
+                        </ChodeshMaskoretVestatusOved>
+                        <SachHafrashaLeOvedBekupa>
+                            <SACH-HAFRASHA-LEOVED-BEKUPA xsi:nil="true"></SACH-HAFRASHA-LEOVED-BEKUPA>
+                        </SachHafrashaLeOvedBekupa>
+                    </PirteiOved>
+                    <PirteiOved>
+                        <SUG-MEZAHE-OVED>1</SUG-MEZAHE-OVED>
+                        <MISPAR-MEZAHE>203717046</MISPAR-MEZAHE>
+                        <SHEM-PRATI>גיא לירן</SHEM-PRATI>
+                        <SHEM-MISHPACHA>בן חיים</SHEM-MISHPACHA>
+                        <TAARICH-LEIDA>1991-09-03</TAARICH-LEIDA>
+                        <MISPAR-OVED-ETZEL-MAASIK>106</MISPAR-OVED-ETZEL-MAASIK>
+                        <KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>27081</KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>
+                        <SHEM-YISHUV>רחובות</SHEM-YISHUV>
+                        <SHEM-RECHOV>מרגולין</SHEM-RECHOV>
+                        <MISPAR-BAIT>33</MISPAR-BAIT>
+                        <MISPAR-DIRA xsi:nil="true"></MISPAR-DIRA>
+                        <MIKUD>7622406</MIKUD>
+                        <TA-DOAR xsi:nil="true"></TA-DOAR>
+                        <E-MAIL>benhaim400@gmail.com</E-MAIL>
+                        <MISPAR-CELLULARI>0544296416</MISPAR-CELLULARI>
+                        <MIN>1</MIN>
+                        <MOED-TCHILAT-AHASAKAT-OVED>2022-08-01</MOED-TCHILAT-AHASAKAT-OVED>
+                        <HASHAVA-KIBUTZI xsi:nil="true"></HASHAVA-KIBUTZI>
+                        <HATZHARAT-OVED xsi:nil="true"></HATZHARAT-OVED>
+                        <SEIF-ARBA-ESRE-LAOVED>1</SEIF-ARBA-ESRE-LAOVED>
+                        <SEIF-ARBA-ESRE-TAHRIH-KNISA-LETOKEF xsi:nil="true"></SEIF-ARBA-ESRE-TAHRIH-KNISA-LETOKEF>
+                        <ChodeshMaskoretVestatusOved>
+                            <CHODESH-MASKORET>2026-01-01</CHODESH-MASKORET>
+                            <MAHAMAD-HAFKADA-BEKUPA>1</MAHAMAD-HAFKADA-BEKUPA>
+                            <SUG-TAKBUL>1</SUG-TAKBUL>
+                            <ROVED-SACHAR>1</ROVED-SACHAR>
+                            <SIBAT-BAKASH-LECHZER-KSAFIM xsi:nil="true"></SIBAT-BAKASH-LECHZER-KSAFIM>
+                            <SACHAR-MEDUVACH>4955.00</SACHAR-MEDUVACH>
+                            <STATUS-OVED-BECHODESH-MASKORET>2</STATUS-OVED-BECHODESH-MASKORET>
+                            <TAARICH-TCHILAT-STATUS>2022-08-01</TAARICH-TCHILAT-STATUS>
+                            <CHELKIUT-MISRA>100.00</CHELKIUT-MISRA>
+                            <YEMEI-AVODA-BECHODESH>20</YEMEI-AVODA-BECHODESH>
+                            <MISPAR-POLISA-O-HESHBON xsi:nil="true"></MISPAR-POLISA-O-HESHBON>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>1</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.00</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>297.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>AC9A66B5-93BA-471C-9A08-CC2C904EF9CD</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>2</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.00</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>297.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>61DE56C0-CC1C-40A5-B883-AA376D72AEB0</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>3</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.50</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>322.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>CFBCCB1E-582C-48C1-BA8A-CEBB9D98B927</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <SachHafrashaLeKupaBechodeshMaskoretOved>
+                                <SACH-HAFRASHA-BECHODESH-MASKORET xsi:nil="true"></SACH-HAFRASHA-BECHODESH-MASKORET>
+                            </SachHafrashaLeKupaBechodeshMaskoretOved>
+                        </ChodeshMaskoretVestatusOved>
+                        <SachHafrashaLeOvedBekupa>
+                            <SACH-HAFRASHA-LEOVED-BEKUPA xsi:nil="true"></SACH-HAFRASHA-LEOVED-BEKUPA>
+                        </SachHafrashaLeOvedBekupa>
+                    </PirteiOved>
+                    <PirteiOved>
+                        <SUG-MEZAHE-OVED>1</SUG-MEZAHE-OVED>
+                        <MISPAR-MEZAHE>204088488</MISPAR-MEZAHE>
+                        <SHEM-PRATI>יהונתן</SHEM-PRATI>
+                        <SHEM-MISHPACHA>גלבוע</SHEM-MISHPACHA>
+                        <TAARICH-LEIDA>1992-09-17</TAARICH-LEIDA>
+                        <MISPAR-OVED-ETZEL-MAASIK>110</MISPAR-OVED-ETZEL-MAASIK>
+                        <KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>27081</KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>
+                        <SHEM-YISHUV>מודיעין עילית</SHEM-YISHUV>
+                        <SHEM-RECHOV>יהודה הנשיא</SHEM-RECHOV>
+                        <MISPAR-BAIT>45</MISPAR-BAIT>
+                        <MISPAR-DIRA xsi:nil="true"></MISPAR-DIRA>
+                        <MIKUD>7183704</MIKUD>
+                        <TA-DOAR xsi:nil="true"></TA-DOAR>
+                        <E-MAIL>7692150@gmail.com</E-MAIL>
+                        <MISPAR-CELLULARI>0527692150</MISPAR-CELLULARI>
+                        <MIN>1</MIN>
+                        <MOED-TCHILAT-AHASAKAT-OVED>2023-10-01</MOED-TCHILAT-AHASAKAT-OVED>
+                        <HASHAVA-KIBUTZI xsi:nil="true"></HASHAVA-KIBUTZI>
+                        <HATZHARAT-OVED xsi:nil="true"></HATZHARAT-OVED>
+                        <SEIF-ARBA-ESRE-LAOVED>1</SEIF-ARBA-ESRE-LAOVED>
+                        <SEIF-ARBA-ESRE-TAHRIH-KNISA-LETOKEF xsi:nil="true"></SEIF-ARBA-ESRE-TAHRIH-KNISA-LETOKEF>
+                        <ChodeshMaskoretVestatusOved>
+                            <CHODESH-MASKORET>2026-01-01</CHODESH-MASKORET>
+                            <MAHAMAD-HAFKADA-BEKUPA>1</MAHAMAD-HAFKADA-BEKUPA>
+                            <SUG-TAKBUL>1</SUG-TAKBUL>
+                            <ROVED-SACHAR>1</ROVED-SACHAR>
+                            <SIBAT-BAKASH-LECHZER-KSAFIM xsi:nil="true"></SIBAT-BAKASH-LECHZER-KSAFIM>
+                            <SACHAR-MEDUVACH>7000.00</SACHAR-MEDUVACH>
+                            <STATUS-OVED-BECHODESH-MASKORET>1</STATUS-OVED-BECHODESH-MASKORET>
+                            <TAARICH-TCHILAT-STATUS>2023-10-01</TAARICH-TCHILAT-STATUS>
+                            <CHELKIUT-MISRA>100.00</CHELKIUT-MISRA>
+                            <YEMEI-AVODA-BECHODESH>21</YEMEI-AVODA-BECHODESH>
+                            <MISPAR-POLISA-O-HESHBON xsi:nil="true"></MISPAR-POLISA-O-HESHBON>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>1</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.00</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>420.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>94A99E82-8201-4462-8B58-D303641C0B85</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>2</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.00</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>420.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>37488070-2A8B-4522-B514-C2B90DF9FDF5</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>3</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.50</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>455.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>C019F8C8-274D-498B-B9F3-05809864B6FB</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <SachHafrashaLeKupaBechodeshMaskoretOved>
+                                <SACH-HAFRASHA-BECHODESH-MASKORET xsi:nil="true"></SACH-HAFRASHA-BECHODESH-MASKORET>
+                            </SachHafrashaLeKupaBechodeshMaskoretOved>
+                        </ChodeshMaskoretVestatusOved>
+                        <SachHafrashaLeOvedBekupa>
+                            <SACH-HAFRASHA-LEOVED-BEKUPA xsi:nil="true"></SACH-HAFRASHA-LEOVED-BEKUPA>
+                        </SachHafrashaLeOvedBekupa>
+                    </PirteiOved>
+                    <PirteiOved>
+                        <SUG-MEZAHE-OVED>1</SUG-MEZAHE-OVED>
+                        <MISPAR-MEZAHE>211820261</MISPAR-MEZAHE>
+                        <SHEM-PRATI>נתן</SHEM-PRATI>
+                        <SHEM-MISHPACHA>זאנה</SHEM-MISHPACHA>
+                        <TAARICH-LEIDA>2000-03-28</TAARICH-LEIDA>
+                        <MISPAR-OVED-ETZEL-MAASIK>98</MISPAR-OVED-ETZEL-MAASIK>
+                        <KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>27081</KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>
+                        <SHEM-YISHUV>רחובות</SHEM-YISHUV>
+                        <SHEM-RECHOV>אמרי חיים</SHEM-RECHOV>
+                        <MISPAR-BAIT>1</MISPAR-BAIT>
+                        <MISPAR-DIRA xsi:nil="true"></MISPAR-DIRA>
+                        <MIKUD xsi:nil="true"></MIKUD>
+                        <TA-DOAR xsi:nil="true"></TA-DOAR>
+                        <E-MAIL>nathanzana8@gmail.com</E-MAIL>
+                        <MISPAR-CELLULARI>0586992497</MISPAR-CELLULARI>
+                        <MIN>1</MIN>
+                        <MOED-TCHILAT-AHASAKAT-OVED>2021-07-01</MOED-TCHILAT-AHASAKAT-OVED>
+                        <HASHAVA-KIBUTZI xsi:nil="true"></HASHAVA-KIBUTZI>
+                        <HATZHARAT-OVED xsi:nil="true"></HATZHARAT-OVED>
+                        <SEIF-ARBA-ESRE-LAOVED>3</SEIF-ARBA-ESRE-LAOVED>
+                        <SEIF-ARBA-ESRE-TAHRIH-KNISA-LETOKEF xsi:nil="true"></SEIF-ARBA-ESRE-TAHRIH-KNISA-LETOKEF>
+                        <ChodeshMaskoretVestatusOved>
+                            <CHODESH-MASKORET>2026-01-01</CHODESH-MASKORET>
+                            <MAHAMAD-HAFKADA-BEKUPA>1</MAHAMAD-HAFKADA-BEKUPA>
+                            <SUG-TAKBUL>1</SUG-TAKBUL>
+                            <ROVED-SACHAR>1</ROVED-SACHAR>
+                            <SIBAT-BAKASH-LECHZER-KSAFIM xsi:nil="true"></SIBAT-BAKASH-LECHZER-KSAFIM>
+                            <SACHAR-MEDUVACH>8010.00</SACHAR-MEDUVACH>
+                            <STATUS-OVED-BECHODESH-MASKORET>2</STATUS-OVED-BECHODESH-MASKORET>
+                            <TAARICH-TCHILAT-STATUS>2021-07-01</TAARICH-TCHILAT-STATUS>
+                            <CHELKIUT-MISRA>100.00</CHELKIUT-MISRA>
+                            <YEMEI-AVODA-BECHODESH xsi:nil="true"></YEMEI-AVODA-BECHODESH>
+                            <MISPAR-POLISA-O-HESHBON xsi:nil="true"></MISPAR-POLISA-O-HESHBON>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>1</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.00</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>481.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>51036373-1318-4BF3-86C9-E76A3797E37C</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>2</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.00</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>481.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>585AEC41-B429-4CEF-935D-BD868FD4C551</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>3</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.50</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>521.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>12ACAEFA-B0E0-4AD3-93E3-8341F46F446B</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <SachHafrashaLeKupaBechodeshMaskoretOved>
+                                <SACH-HAFRASHA-BECHODESH-MASKORET xsi:nil="true"></SACH-HAFRASHA-BECHODESH-MASKORET>
+                            </SachHafrashaLeKupaBechodeshMaskoretOved>
+                        </ChodeshMaskoretVestatusOved>
+                        <SachHafrashaLeOvedBekupa>
+                            <SACH-HAFRASHA-LEOVED-BEKUPA xsi:nil="true"></SACH-HAFRASHA-LEOVED-BEKUPA>
+                        </SachHafrashaLeOvedBekupa>
+                    </PirteiOved>
+                    <SachHafrashaLeKupaMaasik>
+                        <SACH-HAFRASHA-LEKUPA-BERAMAT-MAASIK xsi:nil="true"></SACH-HAFRASHA-LEKUPA-BERAMAT-MAASIK>
+                        <SACH-HAFKADA-LEKUPA-BERAMAT-MAASIK xsi:nil="true"></SACH-HAFKADA-LEKUPA-BERAMAT-MAASIK>
+                        <MISPAR-AMITIM-BERAMAT-MAASIK xsi:nil="true"></MISPAR-AMITIM-BERAMAT-MAASIK>
+                    </SachHafrashaLeKupaMaasik>
+                </PirteiKupa>
+            </PirteiHaavaratKsafim>
+            <PirteiHaavaratKsafim>
+                <KOD-MEZAHE-KUPA-H-P>512237744000000000001620000000</KOD-MEZAHE-KUPA-H-P>
+                <SUG-MAFKID>1</SUG-MAFKID>
+                <SUG-MEZAHE-MAASIK>1</SUG-MEZAHE-MAASIK>
+                <MISPAR-ZIHUY-MAASIK>580196921</MISPAR-ZIHUY-MAASIK>
+                <MISPAR-TIK-NIKUIM-MAASIK>926205535</MISPAR-TIK-NIKUIM-MAASIK>
+                <KOD-MEZAHE-MAASIK-ETZEL-YATZRAN xsi:nil="true"></KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>
+                <KOD-MASAV>67289306</KOD-MASAV>
+                <SCHUM-HAFKADA-KOLEL>1850.00</SCHUM-HAFKADA-KOLEL>
+                <SHEM-MAASIK>דעת לימודי יהדות</SHEM-MAASIK>
+                <SHEM-PRATI-ISH-KESHER-MAASIK>לילך</SHEM-PRATI-ISH-KESHER-MAASIK>
+                <SHEM-MISHPACHA-ISH-KESHER-MAASIK>רט</SHEM-MISHPACHA-ISH-KESHER-MAASIK>
+                <MISPAR-TELEPHONE-KAVI-ISH-KESHER-MAASIK>086214859</MISPAR-TELEPHONE-KAVI-ISH-KESHER-MAASIK>
+                <E-MAIL-ISH-KESHER-MAASIK>daat770@gmail.com</E-MAIL-ISH-KESHER-MAASIK>
+                <MISPAR-CELLULARI-ISH-KESHER-MAASIK>0549770936</MISPAR-CELLULARI-ISH-KESHER-MAASIK>
+                <SUG-PEULA>1</SUG-PEULA>
+                <KOD-EMTZAI-TASHLUM>7</KOD-EMTZAI-TASHLUM>
+                <SACH-HAFKADA-KUPA-H-P>1850.00</SACH-HAFKADA-KUPA-H-P>
+                <TAARICH-ERECH-HAFKADA-LEKUPA>2026-01-31</TAARICH-ERECH-HAFKADA-LEKUPA>
+                <TAARICH-ERECH-HAFKADA-CHESHBON-NEHEMANUT xsi:nil="true"></TAARICH-ERECH-HAFKADA-CHESHBON-NEHEMANUT>
+                <MISPAR-ASMACHTA-LEAHAVARAT-KSAFIM>58019692102601</MISPAR-ASMACHTA-LEAHAVARAT-KSAFIM>
+                <MISPAR-ZIHUI>9A77CA1B-BABD-4A28-91CC-D72FB514C976</MISPAR-ZIHUI>
+                <MISPAR-BANK-MAASIK>52</MISPAR-BANK-MAASIK>
+                <MISPAR-SNIF-MAASIK>174</MISPAR-SNIF-MAASIK>
+                <MISPAR-CHESHBON-MAASIK>555770</MISPAR-CHESHBON-MAASIK>
+                <SUG-CHESHBON xsi:nil="true"></SUG-CHESHBON>
+                <SUG-KARTIS-MAASIK xsi:nil="true"></SUG-KARTIS-MAASIK>
+                <SUG-CHESHBON-MAASIK>1</SUG-CHESHBON-MAASIK>
+                <SUG-CHESHBON-KOLET-TASHLUM>1</SUG-CHESHBON-KOLET-TASHLUM>
+                <MISPAR-BANK-KOLET>12</MISPAR-BANK-KOLET>
+                <MISPAR-SNIF-KOLET>600</MISPAR-SNIF-KOLET>
+                <MISPAR-CHESHBON-KOLET>495592</MISPAR-CHESHBON-KOLET>
+                <MISPAR-ZIHUI-KODEM xsi:nil="true"></MISPAR-ZIHUI-KODEM>
+                <MISPAR-MISLAKA xsi:nil="true"></MISPAR-MISLAKA>
+                <MISPAR-MISLAKA-KODEM xsi:nil="true"></MISPAR-MISLAKA-KODEM>
+                <PirteiKupa>
+                    <SUG-KUPA>2</SUG-KUPA>
+                    <SUG-KEREN-PENSIA xsi:nil="true"></SUG-KEREN-PENSIA>
+                    <SHEM-KUPA-ETZEL-MAASIK>מגדל קרן פנסיה</SHEM-KUPA-ETZEL-MAASIK>
+                    <MISPAR-KUPA-ETZEL-MAASIK>11</MISPAR-KUPA-ETZEL-MAASIK>
+                    <PirteiOved>
+                        <SUG-MEZAHE-OVED>1</SUG-MEZAHE-OVED>
+                        <MISPAR-MEZAHE>205906571</MISPAR-MEZAHE>
+                        <SHEM-PRATI>דוד יהודה</SHEM-PRATI>
+                        <SHEM-MISHPACHA>אוריאן</SHEM-MISHPACHA>
+                        <TAARICH-LEIDA>1996-08-11</TAARICH-LEIDA>
+                        <MISPAR-OVED-ETZEL-MAASIK>87</MISPAR-OVED-ETZEL-MAASIK>
+                        <KOD-MEZAHE-MAASIK-ETZEL-YATZRAN xsi:nil="true"></KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>
+                        <SHEM-YISHUV>בית שמש</SHEM-YISHUV>
+                        <SHEM-RECHOV>אילפא</SHEM-RECHOV>
+                        <MISPAR-BAIT>16</MISPAR-BAIT>
+                        <MISPAR-DIRA xsi:nil="true"></MISPAR-DIRA>
+                        <MIKUD>3009500</MIKUD>
+                        <TA-DOAR xsi:nil="true"></TA-DOAR>
+                        <E-MAIL>dudi0770@gmail.com</E-MAIL>
+                        <MISPAR-CELLULARI>0548053770</MISPAR-CELLULARI>
+                        <MIN>1</MIN>
+                        <MOED-TCHILAT-AHASAKAT-OVED>2020-06-15</MOED-TCHILAT-AHASAKAT-OVED>
+                        <HASHAVA-KIBUTZI xsi:nil="true"></HASHAVA-KIBUTZI>
+                        <HATZHARAT-OVED xsi:nil="true"></HATZHARAT-OVED>
+                        <SEIF-ARBA-ESRE-LAOVED>3</SEIF-ARBA-ESRE-LAOVED>
+                        <SEIF-ARBA-ESRE-TAHRIH-KNISA-LETOKEF xsi:nil="true"></SEIF-ARBA-ESRE-TAHRIH-KNISA-LETOKEF>
+                        <ChodeshMaskoretVestatusOved>
+                            <CHODESH-MASKORET>2026-01-01</CHODESH-MASKORET>
+                            <MAHAMAD-HAFKADA-BEKUPA>1</MAHAMAD-HAFKADA-BEKUPA>
+                            <SUG-TAKBUL>1</SUG-TAKBUL>
+                            <ROVED-SACHAR>1</ROVED-SACHAR>
+                            <SIBAT-BAKASH-LECHZER-KSAFIM xsi:nil="true"></SIBAT-BAKASH-LECHZER-KSAFIM>
+                            <SACHAR-MEDUVACH>10000.00</SACHAR-MEDUVACH>
+                            <STATUS-OVED-BECHODESH-MASKORET>1</STATUS-OVED-BECHODESH-MASKORET>
+                            <TAARICH-TCHILAT-STATUS>2020-06-15</TAARICH-TCHILAT-STATUS>
+                            <CHELKIUT-MISRA>100.00</CHELKIUT-MISRA>
+                            <YEMEI-AVODA-BECHODESH>23</YEMEI-AVODA-BECHODESH>
+                            <MISPAR-POLISA-O-HESHBON xsi:nil="true"></MISPAR-POLISA-O-HESHBON>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>1</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.00</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>600.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>B613BBC8-6BBD-4B0E-8AFD-8D72E91EB85A</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>2</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.00</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>600.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>EB6EC604-CD45-4C7E-BF8D-62D942BC89B1</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>3</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.50</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>650.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>406D1BC2-ACA8-41DA-B32D-C613CC19D103</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <SachHafrashaLeKupaBechodeshMaskoretOved>
+                                <SACH-HAFRASHA-BECHODESH-MASKORET xsi:nil="true"></SACH-HAFRASHA-BECHODESH-MASKORET>
+                            </SachHafrashaLeKupaBechodeshMaskoretOved>
+                        </ChodeshMaskoretVestatusOved>
+                        <SachHafrashaLeOvedBekupa>
+                            <SACH-HAFRASHA-LEOVED-BEKUPA xsi:nil="true"></SACH-HAFRASHA-LEOVED-BEKUPA>
+                        </SachHafrashaLeOvedBekupa>
+                    </PirteiOved>
+                    <SachHafrashaLeKupaMaasik>
+                        <SACH-HAFRASHA-LEKUPA-BERAMAT-MAASIK xsi:nil="true"></SACH-HAFRASHA-LEKUPA-BERAMAT-MAASIK>
+                        <SACH-HAFKADA-LEKUPA-BERAMAT-MAASIK xsi:nil="true"></SACH-HAFKADA-LEKUPA-BERAMAT-MAASIK>
+                        <MISPAR-AMITIM-BERAMAT-MAASIK xsi:nil="true"></MISPAR-AMITIM-BERAMAT-MAASIK>
+                    </SachHafrashaLeKupaMaasik>
+                </PirteiKupa>
+            </PirteiHaavaratKsafim>
+            <PirteiHaavaratKsafim>
+                <KOD-MEZAHE-KUPA-H-P>512244146000000000001700000000</KOD-MEZAHE-KUPA-H-P>
+                <SUG-MAFKID>1</SUG-MAFKID>
+                <SUG-MEZAHE-MAASIK>1</SUG-MEZAHE-MAASIK>
+                <MISPAR-ZIHUY-MAASIK>580196921</MISPAR-ZIHUY-MAASIK>
+                <MISPAR-TIK-NIKUIM-MAASIK>926205535</MISPAR-TIK-NIKUIM-MAASIK>
+                <KOD-MEZAHE-MAASIK-ETZEL-YATZRAN xsi:nil="true"></KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>
+                <KOD-MASAV xsi:nil="true"></KOD-MASAV>
+                <SCHUM-HAFKADA-KOLEL>925.00</SCHUM-HAFKADA-KOLEL>
+                <SHEM-MAASIK>דעת לימודי יהדות</SHEM-MAASIK>
+                <SHEM-PRATI-ISH-KESHER-MAASIK>לילך</SHEM-PRATI-ISH-KESHER-MAASIK>
+                <SHEM-MISHPACHA-ISH-KESHER-MAASIK>רט</SHEM-MISHPACHA-ISH-KESHER-MAASIK>
+                <MISPAR-TELEPHONE-KAVI-ISH-KESHER-MAASIK>086214859</MISPAR-TELEPHONE-KAVI-ISH-KESHER-MAASIK>
+                <E-MAIL-ISH-KESHER-MAASIK>daat770@gmail.com</E-MAIL-ISH-KESHER-MAASIK>
+                <MISPAR-CELLULARI-ISH-KESHER-MAASIK>0549770936</MISPAR-CELLULARI-ISH-KESHER-MAASIK>
+                <SUG-PEULA>1</SUG-PEULA>
+                <KOD-EMTZAI-TASHLUM>1</KOD-EMTZAI-TASHLUM>
+                <SACH-HAFKADA-KUPA-H-P>925.00</SACH-HAFKADA-KUPA-H-P>
+                <TAARICH-ERECH-HAFKADA-LEKUPA>2026-01-31</TAARICH-ERECH-HAFKADA-LEKUPA>
+                <TAARICH-ERECH-HAFKADA-CHESHBON-NEHEMANUT xsi:nil="true"></TAARICH-ERECH-HAFKADA-CHESHBON-NEHEMANUT>
+                <MISPAR-ASMACHTA-LEAHAVARAT-KSAFIM>58019692102601</MISPAR-ASMACHTA-LEAHAVARAT-KSAFIM>
+                <MISPAR-ZIHUI>4B9DE518-A6FA-497C-9AEE-817F18542D9C</MISPAR-ZIHUI>
+                <MISPAR-BANK-MAASIK>52</MISPAR-BANK-MAASIK>
+                <MISPAR-SNIF-MAASIK>174</MISPAR-SNIF-MAASIK>
+                <MISPAR-CHESHBON-MAASIK>555770</MISPAR-CHESHBON-MAASIK>
+                <SUG-CHESHBON xsi:nil="true"></SUG-CHESHBON>
+                <SUG-KARTIS-MAASIK xsi:nil="true"></SUG-KARTIS-MAASIK>
+                <SUG-CHESHBON-MAASIK>1</SUG-CHESHBON-MAASIK>
+                <SUG-CHESHBON-KOLET-TASHLUM>1</SUG-CHESHBON-KOLET-TASHLUM>
+                <MISPAR-BANK-KOLET>10</MISPAR-BANK-KOLET>
+                <MISPAR-SNIF-KOLET>800</MISPAR-SNIF-KOLET>
+                <MISPAR-CHESHBON-KOLET>4192039</MISPAR-CHESHBON-KOLET>
+                <MISPAR-ZIHUI-KODEM xsi:nil="true"></MISPAR-ZIHUI-KODEM>
+                <MISPAR-MISLAKA xsi:nil="true"></MISPAR-MISLAKA>
+                <MISPAR-MISLAKA-KODEM xsi:nil="true"></MISPAR-MISLAKA-KODEM>
+                <PirteiKupa>
+                    <SUG-KUPA>2</SUG-KUPA>
+                    <SUG-KEREN-PENSIA xsi:nil="true"></SUG-KEREN-PENSIA>
+                    <SHEM-KUPA-ETZEL-MAASIK>כלל קרן פנסיה</SHEM-KUPA-ETZEL-MAASIK>
+                    <MISPAR-KUPA-ETZEL-MAASIK>10</MISPAR-KUPA-ETZEL-MAASIK>
+                    <PirteiOved>
+                        <SUG-MEZAHE-OVED>1</SUG-MEZAHE-OVED>
+                        <MISPAR-MEZAHE>207897018</MISPAR-MEZAHE>
+                        <SHEM-PRATI>מרים</SHEM-PRATI>
+                        <SHEM-MISHPACHA>הומינר</SHEM-MISHPACHA>
+                        <TAARICH-LEIDA>1999-06-30</TAARICH-LEIDA>
+                        <MISPAR-OVED-ETZEL-MAASIK>113</MISPAR-OVED-ETZEL-MAASIK>
+                        <KOD-MEZAHE-MAASIK-ETZEL-YATZRAN xsi:nil="true"></KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>
+                        <SHEM-YISHUV>רחובות</SHEM-YISHUV>
+                        <SHEM-RECHOV>מעפילי אגוז</SHEM-RECHOV>
+                        <MISPAR-BAIT>28</MISPAR-BAIT>
+                        <MISPAR-DIRA xsi:nil="true"></MISPAR-DIRA>
+                        <MIKUD>7622377</MIKUD>
+                        <TA-DOAR xsi:nil="true"></TA-DOAR>
+                        <E-MAIL>7184216@gmail.com</E-MAIL>
+                        <MISPAR-CELLULARI>0535671412</MISPAR-CELLULARI>
+                        <MIN>2</MIN>
+                        <MOED-TCHILAT-AHASAKAT-OVED>2023-12-01</MOED-TCHILAT-AHASAKAT-OVED>
+                        <HASHAVA-KIBUTZI xsi:nil="true"></HASHAVA-KIBUTZI>
+                        <HATZHARAT-OVED xsi:nil="true"></HATZHARAT-OVED>
+                        <SEIF-ARBA-ESRE-LAOVED>3</SEIF-ARBA-ESRE-LAOVED>
+                        <SEIF-ARBA-ESRE-TAHRIH-KNISA-LETOKEF xsi:nil="true"></SEIF-ARBA-ESRE-TAHRIH-KNISA-LETOKEF>
+                        <ChodeshMaskoretVestatusOved>
+                            <CHODESH-MASKORET>2026-01-01</CHODESH-MASKORET>
+                            <MAHAMAD-HAFKADA-BEKUPA>1</MAHAMAD-HAFKADA-BEKUPA>
+                            <SUG-TAKBUL>1</SUG-TAKBUL>
+                            <ROVED-SACHAR>1</ROVED-SACHAR>
+                            <SIBAT-BAKASH-LECHZER-KSAFIM xsi:nil="true"></SIBAT-BAKASH-LECHZER-KSAFIM>
+                            <SACHAR-MEDUVACH>5000.00</SACHAR-MEDUVACH>
+                            <STATUS-OVED-BECHODESH-MASKORET>1</STATUS-OVED-BECHODESH-MASKORET>
+                            <TAARICH-TCHILAT-STATUS>2023-12-01</TAARICH-TCHILAT-STATUS>
+                            <CHELKIUT-MISRA>100.00</CHELKIUT-MISRA>
+                            <YEMEI-AVODA-BECHODESH>21</YEMEI-AVODA-BECHODESH>
+                            <MISPAR-POLISA-O-HESHBON xsi:nil="true"></MISPAR-POLISA-O-HESHBON>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>1</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.00</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>300.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>8F63B3F3-FB49-4598-9C24-D1D10DD58D41</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>2</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.00</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>300.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>241417B8-5563-4B8F-A2B5-5B121D17C517</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>3</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.50</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>325.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>7072082F-F046-47C2-8752-1935F139712D</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <SachHafrashaLeKupaBechodeshMaskoretOved>
+                                <SACH-HAFRASHA-BECHODESH-MASKORET xsi:nil="true"></SACH-HAFRASHA-BECHODESH-MASKORET>
+                            </SachHafrashaLeKupaBechodeshMaskoretOved>
+                        </ChodeshMaskoretVestatusOved>
+                        <SachHafrashaLeOvedBekupa>
+                            <SACH-HAFRASHA-LEOVED-BEKUPA xsi:nil="true"></SACH-HAFRASHA-LEOVED-BEKUPA>
+                        </SachHafrashaLeOvedBekupa>
+                    </PirteiOved>
+                    <SachHafrashaLeKupaMaasik>
+                        <SACH-HAFRASHA-LEKUPA-BERAMAT-MAASIK xsi:nil="true"></SACH-HAFRASHA-LEKUPA-BERAMAT-MAASIK>
+                        <SACH-HAFKADA-LEKUPA-BERAMAT-MAASIK xsi:nil="true"></SACH-HAFKADA-LEKUPA-BERAMAT-MAASIK>
+                        <MISPAR-AMITIM-BERAMAT-MAASIK xsi:nil="true"></MISPAR-AMITIM-BERAMAT-MAASIK>
+                    </SachHafrashaLeKupaMaasik>
+                </PirteiKupa>
+            </PirteiHaavaratKsafim>
+            <PirteiHaavaratKsafim>
+                <KOD-MEZAHE-KUPA-H-P>520024647000000000000000000000</KOD-MEZAHE-KUPA-H-P>
+                <SUG-MAFKID>1</SUG-MAFKID>
+                <SUG-MEZAHE-MAASIK>1</SUG-MEZAHE-MAASIK>
+                <MISPAR-ZIHUY-MAASIK>580196921</MISPAR-ZIHUY-MAASIK>
+                <MISPAR-TIK-NIKUIM-MAASIK>926205535</MISPAR-TIK-NIKUIM-MAASIK>
+                <KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>27081</KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>
+                <KOD-MASAV>67289306</KOD-MASAV>
+                <SCHUM-HAFKADA-KOLEL>6341.00</SCHUM-HAFKADA-KOLEL>
+                <SHEM-MAASIK>דעת לימודי יהדות</SHEM-MAASIK>
+                <SHEM-PRATI-ISH-KESHER-MAASIK>לילך</SHEM-PRATI-ISH-KESHER-MAASIK>
+                <SHEM-MISHPACHA-ISH-KESHER-MAASIK>רט</SHEM-MISHPACHA-ISH-KESHER-MAASIK>
+                <MISPAR-TELEPHONE-KAVI-ISH-KESHER-MAASIK>086214859</MISPAR-TELEPHONE-KAVI-ISH-KESHER-MAASIK>
+                <E-MAIL-ISH-KESHER-MAASIK>daat770@gmail.com</E-MAIL-ISH-KESHER-MAASIK>
+                <MISPAR-CELLULARI-ISH-KESHER-MAASIK>0549770936</MISPAR-CELLULARI-ISH-KESHER-MAASIK>
+                <SUG-PEULA>1</SUG-PEULA>
+                <KOD-EMTZAI-TASHLUM>7</KOD-EMTZAI-TASHLUM>
+                <SACH-HAFKADA-KUPA-H-P>6341.00</SACH-HAFKADA-KUPA-H-P>
+                <TAARICH-ERECH-HAFKADA-LEKUPA>2026-01-31</TAARICH-ERECH-HAFKADA-LEKUPA>
+                <TAARICH-ERECH-HAFKADA-CHESHBON-NEHEMANUT xsi:nil="true"></TAARICH-ERECH-HAFKADA-CHESHBON-NEHEMANUT>
+                <MISPAR-ASMACHTA-LEAHAVARAT-KSAFIM>58019692102601</MISPAR-ASMACHTA-LEAHAVARAT-KSAFIM>
+                <MISPAR-ZIHUI>C136F8D8-EDD4-439E-B5BB-C2BF1C0E4E0E</MISPAR-ZIHUI>
+                <MISPAR-BANK-MAASIK>52</MISPAR-BANK-MAASIK>
+                <MISPAR-SNIF-MAASIK>174</MISPAR-SNIF-MAASIK>
+                <MISPAR-CHESHBON-MAASIK>555770</MISPAR-CHESHBON-MAASIK>
+                <SUG-CHESHBON xsi:nil="true"></SUG-CHESHBON>
+                <SUG-KARTIS-MAASIK xsi:nil="true"></SUG-KARTIS-MAASIK>
+                <SUG-CHESHBON-MAASIK>1</SUG-CHESHBON-MAASIK>
+                <SUG-CHESHBON-KOLET-TASHLUM>1</SUG-CHESHBON-KOLET-TASHLUM>
+                <MISPAR-BANK-KOLET>12</MISPAR-BANK-KOLET>
+                <MISPAR-SNIF-KOLET>600</MISPAR-SNIF-KOLET>
+                <MISPAR-CHESHBON-KOLET>679369</MISPAR-CHESHBON-KOLET>
+                <MISPAR-ZIHUI-KODEM xsi:nil="true"></MISPAR-ZIHUI-KODEM>
+                <MISPAR-MISLAKA xsi:nil="true"></MISPAR-MISLAKA>
+                <MISPAR-MISLAKA-KODEM xsi:nil="true"></MISPAR-MISLAKA-KODEM>
+                <PirteiKupa>
+                    <SUG-KUPA>1</SUG-KUPA>
+                    <SUG-KEREN-PENSIA xsi:nil="true"></SUG-KEREN-PENSIA>
+                    <SHEM-KUPA-ETZEL-MAASIK>ביטוח מנהלים-אריה</SHEM-KUPA-ETZEL-MAASIK>
+                    <MISPAR-KUPA-ETZEL-MAASIK>2</MISPAR-KUPA-ETZEL-MAASIK>
+                    <PirteiOved>
+                        <SUG-MEZAHE-OVED>1</SUG-MEZAHE-OVED>
+                        <MISPAR-MEZAHE>57226953</MISPAR-MEZAHE>
+                        <SHEM-PRATI>יצחק</SHEM-PRATI>
+                        <SHEM-MISHPACHA>ערד </SHEM-MISHPACHA>
+                        <TAARICH-LEIDA>1961-07-23</TAARICH-LEIDA>
+                        <MISPAR-OVED-ETZEL-MAASIK>26</MISPAR-OVED-ETZEL-MAASIK>
+                        <KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>27081</KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>
+                        <SHEM-YISHUV>רחובות</SHEM-YISHUV>
+                        <SHEM-RECHOV>הגר&quot;א</SHEM-RECHOV>
+                        <MISPAR-BAIT>13</MISPAR-BAIT>
+                        <MISPAR-DIRA xsi:nil="true"></MISPAR-DIRA>
+                        <MIKUD xsi:nil="true"></MIKUD>
+                        <TA-DOAR xsi:nil="true"></TA-DOAR>
+                        <E-MAIL>arad770@gmail.com</E-MAIL>
+                        <MISPAR-CELLULARI>0546427703</MISPAR-CELLULARI>
+                        <MIN>1</MIN>
+                        <MOED-TCHILAT-AHASAKAT-OVED>2011-11-01</MOED-TCHILAT-AHASAKAT-OVED>
+                        <HASHAVA-KIBUTZI xsi:nil="true"></HASHAVA-KIBUTZI>
+                        <HATZHARAT-OVED xsi:nil="true"></HATZHARAT-OVED>
+                        <SEIF-ARBA-ESRE-LAOVED>3</SEIF-ARBA-ESRE-LAOVED>
+                        <SEIF-ARBA-ESRE-TAHRIH-KNISA-LETOKEF xsi:nil="true"></SEIF-ARBA-ESRE-TAHRIH-KNISA-LETOKEF>
+                        <ChodeshMaskoretVestatusOved>
+                            <CHODESH-MASKORET>2026-01-01</CHODESH-MASKORET>
+                            <MAHAMAD-HAFKADA-BEKUPA>1</MAHAMAD-HAFKADA-BEKUPA>
+                            <SUG-TAKBUL>1</SUG-TAKBUL>
+                            <ROVED-SACHAR>1</ROVED-SACHAR>
+                            <SIBAT-BAKASH-LECHZER-KSAFIM xsi:nil="true"></SIBAT-BAKASH-LECHZER-KSAFIM>
+                            <SACHAR-MEDUVACH>13500.00</SACHAR-MEDUVACH>
+                            <STATUS-OVED-BECHODESH-MASKORET>1</STATUS-OVED-BECHODESH-MASKORET>
+                            <TAARICH-TCHILAT-STATUS>2011-11-01</TAARICH-TCHILAT-STATUS>
+                            <CHELKIUT-MISRA>100.00</CHELKIUT-MISRA>
+                            <YEMEI-AVODA-BECHODESH xsi:nil="true"></YEMEI-AVODA-BECHODESH>
+                            <MISPAR-POLISA-O-HESHBON xsi:nil="true"></MISPAR-POLISA-O-HESHBON>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>1</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>8.33</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>1125.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>BACD76E3-75FC-4296-9A23-770EE564DCF5</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>2</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.00</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>810.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>E21D63B3-119A-4553-AEC6-45F31FC2AA15</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>3</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.50</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>878.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>716E27D8-39B8-44DB-BDDC-501F3DD35BB3</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>6</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>3.43</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>463.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>873A370F-06DD-4237-AF0F-F7D94C2E54AB</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>8</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>2.00</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>270.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>784300C8-92A0-444B-94F4-1AFAE8E80463</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <SachHafrashaLeKupaBechodeshMaskoretOved>
+                                <SACH-HAFRASHA-BECHODESH-MASKORET xsi:nil="true"></SACH-HAFRASHA-BECHODESH-MASKORET>
+                            </SachHafrashaLeKupaBechodeshMaskoretOved>
+                        </ChodeshMaskoretVestatusOved>
+                        <SachHafrashaLeOvedBekupa>
+                            <SACH-HAFRASHA-LEOVED-BEKUPA xsi:nil="true"></SACH-HAFRASHA-LEOVED-BEKUPA>
+                        </SachHafrashaLeOvedBekupa>
+                    </PirteiOved>
+                    <SachHafrashaLeKupaMaasik>
+                        <SACH-HAFRASHA-LEKUPA-BERAMAT-MAASIK xsi:nil="true"></SACH-HAFRASHA-LEKUPA-BERAMAT-MAASIK>
+                        <SACH-HAFKADA-LEKUPA-BERAMAT-MAASIK xsi:nil="true"></SACH-HAFKADA-LEKUPA-BERAMAT-MAASIK>
+                        <MISPAR-AMITIM-BERAMAT-MAASIK xsi:nil="true"></MISPAR-AMITIM-BERAMAT-MAASIK>
+                    </SachHafrashaLeKupaMaasik>
+                </PirteiKupa>
+                <PirteiKupa>
+                    <SUG-KUPA>1</SUG-KUPA>
+                    <SUG-KEREN-PENSIA xsi:nil="true"></SUG-KEREN-PENSIA>
+                    <SHEM-KUPA-ETZEL-MAASIK>ביטוח מנהלים-כלל</SHEM-KUPA-ETZEL-MAASIK>
+                    <MISPAR-KUPA-ETZEL-MAASIK>8</MISPAR-KUPA-ETZEL-MAASIK>
+                    <PirteiOved>
+                        <SUG-MEZAHE-OVED>1</SUG-MEZAHE-OVED>
+                        <MISPAR-MEZAHE>52681145</MISPAR-MEZAHE>
+                        <SHEM-PRATI>רחל</SHEM-PRATI>
+                        <SHEM-MISHPACHA>ערד </SHEM-MISHPACHA>
+                        <TAARICH-LEIDA>1982-01-21</TAARICH-LEIDA>
+                        <MISPAR-OVED-ETZEL-MAASIK>5</MISPAR-OVED-ETZEL-MAASIK>
+                        <KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>27081</KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>
+                        <SHEM-YISHUV>רחובות</SHEM-YISHUV>
+                        <SHEM-RECHOV>ש&quot;י 7/2</SHEM-RECHOV>
+                        <MISPAR-BAIT>2</MISPAR-BAIT>
+                        <MISPAR-DIRA xsi:nil="true"></MISPAR-DIRA>
+                        <MIKUD>76252</MIKUD>
+                        <TA-DOAR xsi:nil="true"></TA-DOAR>
+                        <E-MAIL>Rachelarad1@gmail.com</E-MAIL>
+                        <MISPAR-CELLULARI>0546270770</MISPAR-CELLULARI>
+                        <MIN>2</MIN>
+                        <MOED-TCHILAT-AHASAKAT-OVED>2006-11-01</MOED-TCHILAT-AHASAKAT-OVED>
+                        <HASHAVA-KIBUTZI xsi:nil="true"></HASHAVA-KIBUTZI>
+                        <HATZHARAT-OVED xsi:nil="true"></HATZHARAT-OVED>
+                        <SEIF-ARBA-ESRE-LAOVED>2</SEIF-ARBA-ESRE-LAOVED>
+                        <SEIF-ARBA-ESRE-TAHRIH-KNISA-LETOKEF>2011-11-01</SEIF-ARBA-ESRE-TAHRIH-KNISA-LETOKEF>
+                        <ChodeshMaskoretVestatusOved>
+                            <CHODESH-MASKORET>2026-01-01</CHODESH-MASKORET>
+                            <MAHAMAD-HAFKADA-BEKUPA>1</MAHAMAD-HAFKADA-BEKUPA>
+                            <SUG-TAKBUL>1</SUG-TAKBUL>
+                            <ROVED-SACHAR>1</ROVED-SACHAR>
+                            <SIBAT-BAKASH-LECHZER-KSAFIM xsi:nil="true"></SIBAT-BAKASH-LECHZER-KSAFIM>
+                            <SACHAR-MEDUVACH>8400.00</SACHAR-MEDUVACH>
+                            <STATUS-OVED-BECHODESH-MASKORET>1</STATUS-OVED-BECHODESH-MASKORET>
+                            <TAARICH-TCHILAT-STATUS>2006-11-01</TAARICH-TCHILAT-STATUS>
+                            <CHELKIUT-MISRA>100.00</CHELKIUT-MISRA>
+                            <YEMEI-AVODA-BECHODESH>21</YEMEI-AVODA-BECHODESH>
+                            <MISPAR-POLISA-O-HESHBON xsi:nil="true"></MISPAR-POLISA-O-HESHBON>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>1</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>8.33</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>700.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>E2D247EF-A7D4-4368-9A3F-821F86D97730</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>2</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.00</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>504.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>6DB07935-78AB-446D-B2AD-A42E8ACB53C7</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>3</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.50</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>546.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>6CE40180-DB92-48E3-8D25-36A7917673A7</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>6</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>1.57</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>132.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>9C6258B9-626C-4EB2-ABCB-EB33AED81F28</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <SachHafrashaLeKupaBechodeshMaskoretOved>
+                                <SACH-HAFRASHA-BECHODESH-MASKORET xsi:nil="true"></SACH-HAFRASHA-BECHODESH-MASKORET>
+                            </SachHafrashaLeKupaBechodeshMaskoretOved>
+                        </ChodeshMaskoretVestatusOved>
+                        <SachHafrashaLeOvedBekupa>
+                            <SACH-HAFRASHA-LEOVED-BEKUPA xsi:nil="true"></SACH-HAFRASHA-LEOVED-BEKUPA>
+                        </SachHafrashaLeOvedBekupa>
+                    </PirteiOved>
+                    <PirteiOved>
+                        <SUG-MEZAHE-OVED>1</SUG-MEZAHE-OVED>
+                        <MISPAR-MEZAHE>52860269</MISPAR-MEZAHE>
+                        <SHEM-PRATI>שרה רבקה</SHEM-PRATI>
+                        <SHEM-MISHPACHA>קופצי&apos;ק </SHEM-MISHPACHA>
+                        <TAARICH-LEIDA>1983-10-19</TAARICH-LEIDA>
+                        <MISPAR-OVED-ETZEL-MAASIK>28</MISPAR-OVED-ETZEL-MAASIK>
+                        <KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>27081</KOD-MEZAHE-MAASIK-ETZEL-YATZRAN>
+                        <SHEM-YISHUV>צפת</SHEM-YISHUV>
+                        <SHEM-RECHOV>קריית חב&quot;ד</SHEM-RECHOV>
+                        <MISPAR-BAIT>218</MISPAR-BAIT>
+                        <MISPAR-DIRA xsi:nil="true"></MISPAR-DIRA>
+                        <MIKUD xsi:nil="true"></MIKUD>
+                        <TA-DOAR xsi:nil="true"></TA-DOAR>
+                        <E-MAIL>zak770@gmail.com</E-MAIL>
+                        <MISPAR-CELLULARI>0500000000</MISPAR-CELLULARI>
+                        <MIN>2</MIN>
+                        <MOED-TCHILAT-AHASAKAT-OVED>2011-11-01</MOED-TCHILAT-AHASAKAT-OVED>
+                        <HASHAVA-KIBUTZI xsi:nil="true"></HASHAVA-KIBUTZI>
+                        <HATZHARAT-OVED xsi:nil="true"></HATZHARAT-OVED>
+                        <SEIF-ARBA-ESRE-LAOVED>1</SEIF-ARBA-ESRE-LAOVED>
+                        <SEIF-ARBA-ESRE-TAHRIH-KNISA-LETOKEF xsi:nil="true"></SEIF-ARBA-ESRE-TAHRIH-KNISA-LETOKEF>
+                        <ChodeshMaskoretVestatusOved>
+                            <CHODESH-MASKORET>2026-01-01</CHODESH-MASKORET>
+                            <MAHAMAD-HAFKADA-BEKUPA>1</MAHAMAD-HAFKADA-BEKUPA>
+                            <SUG-TAKBUL>1</SUG-TAKBUL>
+                            <ROVED-SACHAR>1</ROVED-SACHAR>
+                            <SIBAT-BAKASH-LECHZER-KSAFIM xsi:nil="true"></SIBAT-BAKASH-LECHZER-KSAFIM>
+                            <SACHAR-MEDUVACH>5500.00</SACHAR-MEDUVACH>
+                            <STATUS-OVED-BECHODESH-MASKORET>1</STATUS-OVED-BECHODESH-MASKORET>
+                            <TAARICH-TCHILAT-STATUS>2011-11-01</TAARICH-TCHILAT-STATUS>
+                            <CHELKIUT-MISRA>100.00</CHELKIUT-MISRA>
+                            <YEMEI-AVODA-BECHODESH xsi:nil="true"></YEMEI-AVODA-BECHODESH>
+                            <MISPAR-POLISA-O-HESHBON xsi:nil="true"></MISPAR-POLISA-O-HESHBON>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>1</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>8.33</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>458.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>458.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>8A6EC0B8-B4A3-4A76-9415-77CB9F25D3B0</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>3</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>6.50</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>358.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>358.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>A570853D-C168-479E-AD91-5A18678457AD</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <PizulHafrashotOvedBeKupa>
+                                <SUG-HAFRASHA>6</SUG-HAFRASHA>
+                                <SHIUR-HAFRASHA>1.76</SHIUR-HAFRASHA>
+                                <SCHUM-HAFRASHA>97.00</SCHUM-HAFRASHA>
+                                <SACH-TASHLUMIM-PTURIM>0.00</SACH-TASHLUMIM-PTURIM>
+                                <MISPAR-MEZAHE-RESHUMA>A6517341-246E-4B20-A31A-6931BA689B47</MISPAR-MEZAHE-RESHUMA>
+                                <MISPAR-MEZAHE-RESHUMA-KODEM xsi:nil="true"></MISPAR-MEZAHE-RESHUMA-KODEM>
+                            </PizulHafrashotOvedBeKupa>
+                            <SachHafrashaLeKupaBechodeshMaskoretOved>
+                                <SACH-HAFRASHA-BECHODESH-MASKORET xsi:nil="true"></SACH-HAFRASHA-BECHODESH-MASKORET>
+                            </SachHafrashaLeKupaBechodeshMaskoretOved>
+                        </ChodeshMaskoretVestatusOved>
+                        <SachHafrashaLeOvedBekupa>
+                            <SACH-HAFRASHA-LEOVED-BEKUPA xsi:nil="true"></SACH-HAFRASHA-LEOVED-BEKUPA>
+                        </SachHafrashaLeOvedBekupa>
+                    </PirteiOved>
+                    <SachHafrashaLeKupaMaasik>
+                        <SACH-HAFRASHA-LEKUPA-BERAMAT-MAASIK xsi:nil="true"></SACH-HAFRASHA-LEKUPA-BERAMAT-MAASIK>
+                        <SACH-HAFKADA-LEKUPA-BERAMAT-MAASIK xsi:nil="true"></SACH-HAFKADA-LEKUPA-BERAMAT-MAASIK>
+                        <MISPAR-AMITIM-BERAMAT-MAASIK xsi:nil="true"></MISPAR-AMITIM-BERAMAT-MAASIK>
+                    </SachHafrashaLeKupaMaasik>
+                </PirteiKupa>
+            </PirteiHaavaratKsafim>
+        </YeshutGoremPoneLemislaka>
+    </GufHamimshak>
+    <ReshumatSgira>
+        <MISPAR-KUPOT-YATZRANIM-BAKOVETZ>4</MISPAR-KUPOT-YATZRANIM-BAKOVETZ>
+        <MISPAR-MAASIKIM>4</MISPAR-MAASIKIM>
+        <MISPAR-RESHUMOT>45</MISPAR-RESHUMOT>
+        <MISPAR-AMITIM>14</MISPAR-AMITIM>
+        <SACH-HAFRASHOT-BAKOVETZ>16579.00</SACH-HAFRASHOT-BAKOVETZ>
+        <SACH-HAFKADOT-BAKOVETZ>16579.00</SACH-HAFKADOT-BAKOVETZ>
+    </ReshumatSgira>
+</MimshakMaasikim>
