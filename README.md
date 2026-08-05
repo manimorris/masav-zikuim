@@ -18,6 +18,12 @@ personal use since 2019.
 
 Bun · TypeScript · REST API · vanilla SPA client
 
+## Screenshot
+
+The create flow — import an existing MASAV/Openformat file or build one from scratch:
+
+![MASAV Studio — create flow](docs/screenshot-create.png)
+
 ## Project structure
 
 - `src/server.ts` — Bun HTTP server: API routes + static serving of the built client.
