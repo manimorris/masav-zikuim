@@ -13,7 +13,11 @@ export class MasavWriter {
 
     const kot = this.koteret(mosad, pymtDetails.pymtDate);
     const middleLines = this.transactions(transactions, kot);
-    const summary = this.summaryLine(pymtDetails.transactionsSum, pymtDetails.transactionsCount, kot);
+    const summary = this.summaryLine(
+      pymtDetails.transactionsSum,
+      pymtDetails.transactionsCount,
+      kot,
+    );
 
     let fileContent = Object.values(kot).join("");
     middleLines.forEach((line) => {
@@ -44,7 +48,10 @@ export class MasavWriter {
     };
   }
 
-  private transactions(payments: MasavTransaction[], kot: Record<string, string>): Record<string, string>[] {
+  private transactions(
+    payments: MasavTransaction[],
+    kot: Record<string, string>,
+  ): Record<string, string>[] {
     return payments.map((pymt) => ({
       zihiuReshuma: "1",
       mosadSubject: kot.MosadTitle,
@@ -68,7 +75,11 @@ export class MasavWriter {
     }));
   }
 
-  private summaryLine(transactionsSum: string | number, transactionsCount: string | number, kot: Record<string, string>): Record<string, string> {
+  private summaryLine(
+    transactionsSum: string | number,
+    transactionsCount: string | number,
+    kot: Record<string, string>,
+  ): Record<string, string> {
     return {
       zihiuReshuma: "5",
       MosadTitle: kot.MosadTitle,
@@ -99,7 +110,9 @@ export class MasavWriter {
   }
 
   private amountToCents(value: string | number): string {
-    const normalized = String(value ?? "").trim().replace(",", ".");
+    const normalized = String(value ?? "")
+      .trim()
+      .replace(",", ".");
     const parsed = Number.parseFloat(normalized);
 
     if (!Number.isFinite(parsed)) {
