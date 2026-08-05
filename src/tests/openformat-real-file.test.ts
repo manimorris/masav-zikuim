@@ -10,7 +10,7 @@ test("OpenformatReader parses 2.DAT file with multiple pension funds", async () 
 
   expect(result.errorMsg.length).toBe(0);
   expect(result.data).toBeDefined();
-  expect(result.data?.mosad.mosadName).toBe("דעת לימודי יהדות");
+  expect(result.data?.mosad.mosadName).toBe("מוסד לדוגמה ב");
 
   // Should have multiple pension fund payments
   expect(result.data?.transactions.length).toBeGreaterThan(1);
@@ -25,11 +25,11 @@ test("OpenformatReader parses 2.DAT file with multiple pension funds", async () 
 });
 
 test("OpenformatReader parses original DAT file", async () => {
-  const file = Bun.file("openformat/001000039804711EMPONG000005202603080809410001.DAT");
+  const file = Bun.file("openformat/001000012345678EMPONG000005202603080809410001.DAT");
   const content = await file.text();
 
   const reader = new OpenformatReader();
-  const result = reader.returnFileData("001000039804711EMPONG000005202603080809410001.DAT", content);
+  const result = reader.returnFileData("001000012345678EMPONG000005202603080809410001.DAT", content);
 
   expect(result.errorMsg.length).toBe(0);
   expect(result.data).toBeDefined();
