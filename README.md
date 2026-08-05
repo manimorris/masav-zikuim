@@ -1,9 +1,22 @@
-# masav-zikuim (Bun + TypeScript)
+# masav-zikuim
 
-This repository runs as a Bun.js TypeScript application with:
+**Read, validate and generate MASAV payment files in TypeScript.**
 
-- **API server** for MASAV files (read, validate, generate).
-- **SPA client** under `client/src` (home page + MASAV creation flow) compiled to `client/build`.
+MASAV (מס"ב) is Israel's inter-bank clearing house. Payment instructions — salaries, supplier
+payments, credits (*zikuim*) — are submitted to it as fixed-width `.msv` files: every field sits at
+an exact byte offset, Hebrew text is encoded in CP862, and a malformed record is rejected by the
+bank with no useful diagnostics.
+
+This service handles that format end-to-end: it parses an existing file into structured JSON,
+validates it against the specification, and generates a new compliant file from edited data. A
+small SPA client provides a UI for the create flow.
+
+Originally written in PHP with jQuery, migrated to JavaScript and then to TypeScript. In continuous
+personal use since 2019.
+
+## Stack
+
+Bun · TypeScript · REST API · vanilla SPA client
 
 ## Run
 
