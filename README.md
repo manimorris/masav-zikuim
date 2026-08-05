@@ -18,6 +18,15 @@ personal use since 2019.
 
 Bun · TypeScript · REST API · vanilla SPA client
 
+## Project structure
+
+- `src/server.ts` — Bun HTTP server: API routes + static serving of the built client.
+- `src/lib/` — the core: `masav-reader.ts` (parser + validator), `masav-writer.ts` (generator), `openformat-reader.ts` (pension "openformat" XML import), `encoding.ts` (CP862 Hebrew handling), `masav-types.ts`, `mosad-store.ts` (institution profiles).
+- `src/tests/` — Bun test suite over the reader, writer and openformat import.
+- `client/src/` — SPA client (home + MASAV creation flow), built to `client/build/` via `bun run build:client`.
+- `openformat/`, `example.txt` — sample input files with fictitious data, used by the tests.
+- `data/` — local institution profiles (gitignored).
+
 ## Run
 
 ```bash
