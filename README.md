@@ -3,7 +3,7 @@
 **Read, validate and generate MASAV payment files in TypeScript.**
 
 MASAV (מס"ב) is Israel's inter-bank clearing house. Payment instructions — salaries, supplier
-payments, credits (*zikuim*) — are submitted to it as fixed-width `.msv` files: every field sits at
+payments, credits (_zikuim_) — are submitted to it as fixed-width `.msv` files: every field sits at
 an exact byte offset, Hebrew text is encoded in CP862, and a malformed record is rejected by the
 bank with no useful diagnostics.
 

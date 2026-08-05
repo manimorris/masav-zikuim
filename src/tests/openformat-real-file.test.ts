@@ -29,7 +29,10 @@ test("OpenformatReader parses original DAT file", async () => {
   const content = await file.text();
 
   const reader = new OpenformatReader();
-  const result = reader.returnFileData("001000012345678EMPONG000005202603080809410001.DAT", content);
+  const result = reader.returnFileData(
+    "001000012345678EMPONG000005202603080809410001.DAT",
+    content,
+  );
 
   expect(result.errorMsg.length).toBe(0);
   expect(result.data).toBeDefined();

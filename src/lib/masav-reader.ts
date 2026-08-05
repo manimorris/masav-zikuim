@@ -64,8 +64,11 @@ export class MasavReader {
       },
       pymtDetails: {
         pymtDate: this.toIsoDate(rawData.koteret.pymtDate),
-        createDate: rawData.koteret.createDate.match(/.{1,2}/g)?.join("/") ?? rawData.koteret.createDate,
-        transactionsSum: transactions.reduce((acc, curr) => acc + Number(curr.pymtSum), 0).toFixed(2),
+        createDate:
+          rawData.koteret.createDate.match(/.{1,2}/g)?.join("/") ?? rawData.koteret.createDate,
+        transactionsSum: transactions
+          .reduce((acc, curr) => acc + Number(curr.pymtSum), 0)
+          .toFixed(2),
         transactionsCount: transactions.length,
       },
       transactions,
