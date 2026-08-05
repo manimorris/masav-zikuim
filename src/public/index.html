@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MASAV Zikuim</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 1rem auto; max-width: 1100px; }
+      table { width: 100%; border-collapse: collapse; }
+      th, td { border: 1px solid #ddd; padding: 6px; }
+      input { width: 100%; box-sizing: border-box; }
+      .row { display: flex; gap: 8px; margin-bottom: 8px; }
+      .row > div { flex: 1; }
+      .actions { margin: 10px 0; display: flex; gap: 8px; }
+      #errors { color: #c00; }
+      #drop { border: 2px dashed #999; padding: 16px; text-align: center; margin-bottom: 12px; }
+    </style>
+  </head>
+  <body>
+    <h1>הפקת קובץ תשלומים למסב</h1>
+
+    <div id="drop">גרור קובץ לכאן או בחר קובץ <input type="file" id="msvFile" /></div>
+    <div id="errors"></div>
+
+    <div class="row">
+      <div><label>שם המוסד <input id="mosadName" /></label></div>
+      <div><label>קוד מוסד מלא <input id="codeMosad" /></label></div>
+      <div><label>תאריך פרעון <input type="date" id="pymtDate" /></label></div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>שם המקבל</th><th>ת.ז</th><th>סכום</th><th>בנק</th><th>סניף</th><th>חשבון</th><th>מתקופה</th><th>עד תקופה</th><th>אסמכתא</th><th>מחק</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+
+    <div class="actions">
+      <button id="addRow">הוסף שורה</button>
+      <button id="removeLast">מחק שורה אחרונה</button>
+      <button id="submit">צור קובץ MASAV</button>
+    </div>
+
+    <script type="module" src="/client.js"></script>
+  </body>
+</html>
