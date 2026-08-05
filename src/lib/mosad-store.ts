@@ -74,7 +74,7 @@ export async function deleteMosadProfile(employerId: string): Promise<boolean> {
 
 export async function updateMosadProfile(
   employerId: string,
-  profile: Omit<MosadProfileInput, "employerId">
+  profile: Omit<MosadProfileInput, "employerId">,
 ): Promise<boolean> {
   const store = await loadMosadStore();
   if (!store[employerId]) {

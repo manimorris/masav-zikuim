@@ -36,14 +36,17 @@ export class OpenformatReader {
       const designedData = this.toMasavFormat(openformatData);
       return { data: designedData, errorMsg: this.errorMsg };
     } catch (error) {
-      this.errorMsg.push(`ERROR: Failed to parse openformat file: ${error instanceof Error ? error.message : String(error)}`);
+      this.errorMsg.push(
+        `ERROR: Failed to parse openformat file: ${error instanceof Error ? error.message : String(error)}`,
+      );
       return { errorMsg: this.errorMsg };
     }
   }
 
   private validateFileType(fileName: string, content: string): boolean {
     const fileType = fileName.toLowerCase().split(".").pop() ?? "";
-    const isXmlContent = content.trim().startsWith("<?xml") || content.trim().startsWith("<MimshakMaasikim");
+    const isXmlContent =
+      content.trim().startsWith("<?xml") || content.trim().startsWith("<MimshakMaasikim");
 
     if (fileType === "dat" || fileType === "xml" || isXmlContent) {
       return true;
@@ -71,8 +74,10 @@ export class OpenformatReader {
     };
 
     // Extract employer info
-    const employerId = getTagValue(content, "MISPAR-ZIHUY-MAASIK") || getTagValue(content, "MISPAR-MEZAHE-PONE");
-    const employerName = getTagValue(content, "SHEM-MAASIK") || getTagValue(content, "SHEM-GOREM-PONE");
+    const employerId =
+      getTagValue(content, "MISPAR-ZIHUY-MAASIK") || getTagValue(content, "MISPAR-MEZAHE-PONE");
+    const employerName =
+      getTagValue(content, "SHEM-MAASIK") || getTagValue(content, "SHEM-GOREM-PONE");
     const executionDate = this.extractDateFromExecution(getTagValue(content, "TAARICH-BITZUA"));
 
     // Extract pension fund payments from PirteiHaavaratKsafim sections
@@ -94,7 +99,10 @@ export class OpenformatReader {
 
       if (fundId && totalAmount > 0) {
         // Check if we already have a payment to this fund (aggregate if so)
-        const existingPayment = fundPayments.find((p) => p.fundId === fundId && p.bankCode === bankCode && p.accountNumber === accountNumber);
+        const existingPayment = fundPayments.find(
+          (p) =>
+            p.fundId === fundId && p.bankCode === bankCode && p.accountNumber === accountNumber,
+        );
         if (existingPayment) {
           existingPayment.totalAmount += totalAmount;
         } else {
@@ -167,7 +175,9 @@ export class OpenformatReader {
       pymtDetails: {
         pymtDate: paymentDate,
         createDate: new Date().toISOString().split("T")[0],
-        transactionsSum: transactions.reduce((sum, t) => sum + parseFloat(String(t.pymtSum)), 0).toFixed(2),
+        transactionsSum: transactions
+          .reduce((sum, t) => sum + parseFloat(String(t.pymtSum)), 0)
+          .toFixed(2),
         transactionsCount: transactions.length,
       },
       transactions,

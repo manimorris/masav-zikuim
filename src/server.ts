@@ -133,7 +133,12 @@ async function handleRead(req: Request): Promise<Response> {
 function isOpenformatFile(fileName: string, content: string): boolean {
   const ext = fileName.toLowerCase().split(".").pop() ?? "";
   const trimmed = content.trim();
-  return ext === "dat" || ext === "xml" || trimmed.startsWith("<?xml") || trimmed.startsWith("<MimshakMaasikim");
+  return (
+    ext === "dat" ||
+    ext === "xml" ||
+    trimmed.startsWith("<?xml") ||
+    trimmed.startsWith("<MimshakMaasikim")
+  );
 }
 
 async function handleValidate(req: Request): Promise<Response> {

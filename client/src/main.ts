@@ -408,7 +408,7 @@ function setupCreatePage(): void {
     if (!response.ok) {
       showMessage(
         ((json as unknown as { errors?: string[] }).errors ?? ["אירעה שגיאה לא צפויה"]).join(", "),
-        "error"
+        "error",
       );
       return;
     }
@@ -506,7 +506,9 @@ function setupMosadProfilesPage(): void {
   const rows = document.getElementById("profilesRows") as HTMLTableSectionElement | null;
   const form = document.getElementById("profileForm") as HTMLFormElement | null;
   const employerIdInput = document.getElementById("profileEmployerId") as HTMLInputElement | null;
-  const employerNameInput = document.getElementById("profileEmployerName") as HTMLInputElement | null;
+  const employerNameInput = document.getElementById(
+    "profileEmployerName",
+  ) as HTMLInputElement | null;
   const codeMosadInput = document.getElementById("profileCodeMosad") as HTMLInputElement | null;
   const submitButton = document.getElementById("profileSubmit") as HTMLButtonElement | null;
   const cancelEditButton = document.getElementById("profileCancelEdit") as HTMLButtonElement | null;
@@ -613,9 +615,12 @@ function setupMosadProfilesPage(): void {
         }
 
         clearMessage();
-        const response = await fetch(`/api/mosad-profiles/${encodeURIComponent(profile.employerId)}`, {
-          method: "DELETE",
-        });
+        const response = await fetch(
+          `/api/mosad-profiles/${encodeURIComponent(profile.employerId)}`,
+          {
+            method: "DELETE",
+          },
+        );
 
         if (!response.ok) {
           showMessage("מחיקת המוסד נכשלה.", "error");
@@ -679,12 +684,14 @@ function setupMosadProfilesPage(): void {
     const isEditing = editingEmployerId !== null;
     const targetEmployerId = editingEmployerId ?? employerId;
     const response = await fetch(
-      isEditing ? `/api/mosad-profiles/${encodeURIComponent(targetEmployerId)}` : "/api/mosad-profiles",
+      isEditing
+        ? `/api/mosad-profiles/${encodeURIComponent(targetEmployerId)}`
+        : "/api/mosad-profiles",
       {
         method: isEditing ? "PUT" : "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(payload),
-      }
+      },
     );
 
     if (!response.ok) {
