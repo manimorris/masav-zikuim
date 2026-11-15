@@ -67,7 +67,11 @@ const server = Bun.serve({
 });
 
 async function serveClientAsset(pathname: string): Promise<Response> {
-  const normalizedPath = pathname === "/" ? "index.html" : pathname.replace(/^\/+/, "");
+  const normalizedPath = pathname.replace(/^\/+/, "");
+  if (normalizedPath === "" || normalizedPath === "index.html") {
+    return serveIndex();
+  }
+
   const filePath = join(CLIENT_BUILD_DIR, normalizedPath);
   const file = Bun.file(filePath);
 
@@ -81,7 +85,15 @@ async function serveClientAsset(pathname: string): Promise<Response> {
     return new Response("Not Found", { status: 404 });
   }
 
-  return new Response(Bun.file(join(CLIENT_BUILD_DIR, "index.html")), {
+  return serveIndex();
+}
+
+// Public URL prefix when deployed behind a reverse proxy under a sub-path (e.g. "/masav/").
+const BASE_PATH = `/${(process.env.BASE_PATH ?? "").replace(/^\/+|\/+$/g, "")}/`.replace("//", "/");
+
+async function serveIndex(): Promise<Response> {
+  const html = await Bun.file(join(CLIENT_BUILD_DIR, "index.html")).text();
+  return new Response(html.replace('<base href="/" />', `<base href="${BASE_PATH}" />`), {
     headers: { "Content-Type": "text/html; charset=utf-8" },
   });
 }
