@@ -58,15 +58,24 @@ document.addEventListener("click", (event) => {
 
 renderRoute();
 
+// App may be served under a sub-path (e.g. /masav/); the server sets it in <base href>.
+function basePath(): string {
+  return new URL(document.baseURI).pathname.replace(/\/+$/, "");
+}
+
 function navigate(path: string): void {
-  if (window.location.pathname !== path) {
-    window.history.pushState({}, "", path);
+  const fullPath = basePath() + path;
+  if (window.location.pathname !== fullPath) {
+    window.history.pushState({}, "", fullPath);
   }
   renderRoute();
 }
 
 function renderRoute(): void {
-  const page = routes[window.location.pathname] ?? routes["/"];
+  const base = basePath();
+  const pathname = window.location.pathname;
+  const route = pathname.startsWith(base) ? pathname.slice(base.length) || "/" : pathname;
+  const page = routes[route] ?? routes["/"];
   page();
 }
 
@@ -375,7 +384,7 @@ function setupCreatePage(): void {
         };
 
         if (saveCheckbox.checked && profile.employerId) {
-          await fetch("/api/mosad-profiles", {
+          await fetch("api/mosad-profiles", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(profile),
@@ -402,7 +411,7 @@ function setupCreatePage(): void {
     const form = new FormData();
     form.set("msvZfile", file);
 
-    const response = await fetch("/api/masav/read", { method: "POST", body: form });
+    const response = await fetch("api/masav/read", { method: "POST", body: form });
     const json = (await response.json()) as MasavPayload;
 
     if (!response.ok) {
@@ -446,7 +455,7 @@ function setupCreatePage(): void {
     const payload = readFormData();
 
     try {
-      const response = await fetch("/api/masav/generate", {
+      const response = await fetch("api/masav/generate", {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify(payload),
@@ -560,7 +569,7 @@ function setupMosadProfilesPage(): void {
   };
 
   const fetchProfiles = async (): Promise<MosadProfile[]> => {
-    const response = await fetch("/api/mosad-profiles");
+    const response = await fetch("api/mosad-profiles");
     if (!response.ok) {
       throw new Error("טעינת המוסדות נכשלה.");
     }
@@ -616,7 +625,7 @@ function setupMosadProfilesPage(): void {
 
         clearMessage();
         const response = await fetch(
-          `/api/mosad-profiles/${encodeURIComponent(profile.employerId)}`,
+          `api/mosad-profiles/${encodeURIComponent(profile.employerId)}`,
           {
             method: "DELETE",
           },
@@ -685,8 +694,8 @@ function setupMosadProfilesPage(): void {
     const targetEmployerId = editingEmployerId ?? employerId;
     const response = await fetch(
       isEditing
-        ? `/api/mosad-profiles/${encodeURIComponent(targetEmployerId)}`
-        : "/api/mosad-profiles",
+        ? `api/mosad-profiles/${encodeURIComponent(targetEmployerId)}`
+        : "api/mosad-profiles",
       {
         method: isEditing ? "PUT" : "POST",
         headers: { "content-type": "application/json" },
